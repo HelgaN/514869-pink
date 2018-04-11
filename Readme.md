@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Helga N](https://up.htmlacademy.ru/adaptive/14/user/514869).
-* Наставник: `Неизвестно`.
+* Наставник: Андрей Рычагов.
 
 ---
 
