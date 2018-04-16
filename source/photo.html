@@ -14,19 +14,19 @@
     </a>
 
     <nav class="main-navigation">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <button class="main-navigation__toggle" type="button">Открыть меню</button>
       <ul class="main-navigation__list">
         <li class="main-navigation__item">
-          <a href="index.html">Главная</a>
+          <a class="main-navigation__link" href="index.html">Главная</a>
         </li>
         <li class="main-navigation__item">
-          <a>Фотографии</a>
+          <a class="main-navigation__link">Фотографии</a>
         </li>
         <li class="main-navigation__item">
-          <a href="form.html">Конкурс</a>
+          <a class="main-navigation__link" href="form.html">Конкурс</a>
         </li>
         <li class="main-navigation__item">
-          <a href="#">HTML Academy</a>
+          <a class="main-navigation__link" href="#">HTML Academy</a>
         </li>
       </ul>
 
@@ -43,15 +43,15 @@
     <section class="photogallery">
       <h2 class="visually-hidden">Фотогалерея</h2>
 
-      <div class="panorama-day">
-        <img class="panorama-day__photo" src="img/panorama-day.svg" width="320" height="137" alt="Изображение панорамы дня">
-        <cite class="panorama-day__author">Анна
-        <span class="panorama-day__time">(5 минут назад)</span>
+      <div class="photogallery__panorama">
+        <img class="photogallery__panorama-photo" src="img/panorama-day.svg" width="320" height="137" alt="Изображение панорамы дня">
+        <cite class="photogallery__panorama-author">Анна
+        <span class="photogallery__panorama-time">(5 минут назад)</span>
       </cite>
-        <blockquote class="panorama-day__blockquote">
+        <blockquote class="photogallery__panorama-blockquote">
           Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
         </blockquote>
-        <p class="panorama-day__likes">Нравится: 215</p>
+        <p class="photogallery__panorama-likes">Нравится: 215</p>
       </div>
 
       <ul class="photogallery__list">
@@ -138,8 +138,8 @@
           <div class="photo-download__range-toggle"></div>
         </div>
 
-        <button class="button photo-download__button photo-download__button--post" type="submit">Запостить</button>
-        <button class="button photo-download__button photo-download__button--cancel" type="reset">Отмена</button>
+        <button class="photo-download__button photo-download__button--post" type="submit">Запостить</button>
+        <button class="photo-download__button photo-download__button--cancel" type="reset">Отмена</button>
 
       </div>
 
