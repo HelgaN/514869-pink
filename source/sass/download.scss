@@ -1,0 +1,34 @@
+.download {
+  padding-top: 424px;
+  padding-bottom: 35px;
+  background-color: $darkblue;
+  background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+.download__button {
+  display: block;
+  width: 282px;
+  padding: 15px 35px;
+  color: $white;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  border: 3px solid $white;
+  border-radius: 20px;
+  &:hover {
+    background-color: $white;
+    color: $pink;
+  }
+  &:active {
+    background-color: $white;
+    color: rgba($pink, 0.3);
+  }
+}
+
+.download__info {
+  color: $white;
+}

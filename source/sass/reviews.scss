@@ -1,0 +1,24 @@
+.reviews {
+  padding-top: 250px;
+  background-color: $lightgrey;
+  background-image: url("../img/iphone-screen-mobile@1x.png");
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+.reviews__list {
+  @include list-reset;
+  background-color: $white;
+}
+
+.reviews__author-name {
+  margin-bottom: 25px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.reviews__text {
+  line-height: $body-line-height + 6px;
+}

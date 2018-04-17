@@ -21,6 +21,7 @@ gulp.task("style", function() {
 gulp.task("serve", ["style"], function() {
   server.init({
     server: "source/",
+    browser: 'chrome',
     notify: false,
     open: true,
     cors: true,

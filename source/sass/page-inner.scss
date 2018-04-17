@@ -1,0 +1,17 @@
+.page-inner__title {
+  display: block;
+  padding: 30px 20px 80px 20px;
+  color: $white;
+  font-size: 24px;
+  line-height: $body-line-height;
+  font-weight: 300;
+  background-color: $blue;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+.page-inner__paragraph-wrapper {
+  padding: 50px 20px;
+  line-height: $body-line-height + 6px;
+}

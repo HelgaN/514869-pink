@@ -1,0 +1,29 @@
+.contacts__tagline {
+  font-size: 24px;
+  line-height: $body-line-height;
+  font-weight: 300;
+  &last-child {
+    margin-bottom: 45px;
+  }
+}
+
+.contacts__list {
+  @include list-reset;
+}
+
+.contacts__item {
+  margin-bottom: 25px;
+}
+
+.contacts__title {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.contacts__info {
+  color: $pink;
+  font-size: 24px;
+  line-height: $body-line-height;
+  font-weight: 300;
+}
