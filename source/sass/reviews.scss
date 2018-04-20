@@ -1,9 +1,5 @@
-.reviews {
-  padding-top: 250px;
-  background-color: $color-lightgrey;
-  background-image: url("../img/iphone-screen-mobile@1x.png");
-  background-position: top left;
-  background-repeat: no-repeat;
+.reviews__wrapper {
+  padding: 0 20px;
 }
 
 .reviews__list {
@@ -21,4 +17,25 @@
 
 .reviews__text {
   line-height: $body-line-height + 6px;
+  text-align: center;
+}
+
+.reviews__author-status {
+  display: none;
+  line-height: $body-line-height + 6px;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .reviews__author-name {
+    order: 1;
+  }
+  .reviews__author-status {
+    display: block;
+    order: 2;
+  }
 }

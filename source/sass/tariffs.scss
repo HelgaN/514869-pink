@@ -7,6 +7,25 @@
   border-collapse: collapse;
 }
 
+.tariff__title,
+.tariff__filter,
+.tariff__smile,
+.tariff__comments {
+  &:first-child {
+    display: none;
+  }
+  &:last-child {
+    display: none;
+  }
+}
+
+.tariff__title,
+.tariff__filter,
+.tariff__smile,
+.tariff__comments {
+  width: 280px;
+}
+
 .tariff__title {
   color: $color-white;
   background-color: $color-blue;
@@ -66,5 +85,21 @@ font-weight: 300;
     background-image: url("../img/icon-no.svg");
     background-repeat: no-repeat;
     background-position: center;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .tariff__title,
+  .tariff__filter,
+  .tariff__smile,
+  .tariff__comments {
+    &:first-child {
+      display: block;
+      width: auto;
+    }
+    &:last-child {
+      display: block;
+      width: auto;
+    }
   }
 }

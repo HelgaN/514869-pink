@@ -5,6 +5,9 @@
   <meta charset="utf-8">
   <title>HTML Academy: Пинк - конкурс</title>
   <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="css/normalize.css">
 </head>
 
 <body>
@@ -43,15 +46,15 @@
     <form class="form" action="https://echo.htmlacademy.ru" method="post">
       <fieldset class="form__fieldset">
         <legend class="visually-hidden">ФИО</legend>
-        <p>
+        <p class="form__wrapper">
           <label class="form__label" for="user-surname">Фамилия:</label>
           <input class="form__input" id="user-surname" type="text" name="surname" placeholder="Укажите фамилию *">
         </p>
-        <p>
+        <p class="form__wrapper">
           <label class="form__label" for="user-name">Имя:</label>
           <input class="form__input" id="user-name" type="text" name="name" placeholder="Введите ваше имя *">
         </p>
-        <p>
+        <p class="form__wrapper">
           <label class="form__label" for="user-patronymic">Отчество:</label>
           <input class="form__input" id="user-patronymic" type="text" name="patronymic" placeholder="Ну и отчество тоже">
         </p>
@@ -118,13 +121,14 @@
       </fieldset>
 
       <fieldset class="form__fieldset">
-        <legend class="form__legend">Опишите свои эмоции
+        <legend class="form__legend">Опишите свои эмоции</legend>
           <textarea class="form__textarea" name="user-message" rows="6" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-        </legend>
       </fieldset>
 
+      <div class="form__wrapper--row">
       <button class="form__button" type="submit">Отправить форму</button>
-      <p class="form__required-info"><span class="form__required-info--pink">*</span> — обязательные для заполнения поля</p>
+      <p class="form__required-info"><span class="form__required-info--pink">*</span> — обязательные поля</p>
+    </div>
     </form>
 
   </main>
@@ -149,7 +153,7 @@
       </ul>
     </div>
     <div class="page-footer__copyright copyright">
-      <p class="copyright__text">Разработано:</p>
+      <p class="copyright__text">Разработано</p>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
     </div>
 
