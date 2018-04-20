@@ -1,11 +1,11 @@
 .page-header {
   padding: 20px;
-  background-color: $darkblue;
+  background-color: $color-darkblue;
 }
 
 .main-navigation__list {
   @include list-reset;
-  background-color: $blue;
+  background-color: $color-blue;
 }
 
 .main-navigation__item {
@@ -15,25 +15,25 @@
 }
 
 .main-navigation__link {
-  color: $white;
+  color: $color-white;
   font-size: 18px;
   line-height: 32px;
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
   &:hover {
-    color: $pink;
+    color: $color-pink;
   }
   &:active {
-    color: rgba($pink, 0.3);
+    color: rgba($color-pink, 0.3);
   }
 }
 
 .main-navigation__link--curent {
   &:hover {
-    color: $white;
+    color: $color-white;
   }
   &:active {
-    color: $white;
+    color: $color-white;
   }
 }

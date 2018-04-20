@@ -1,6 +1,6 @@
 .reviews {
   padding-top: 250px;
-  background-color: $lightgrey;
+  background-color: $color-lightgrey;
   background-image: url("../img/iphone-screen-mobile@1x.png");
   background-position: top left;
   background-repeat: no-repeat;
@@ -8,7 +8,7 @@
 
 .reviews__list {
   @include list-reset;
-  background-color: $white;
+  background-color: $color-white;
 }
 
 .reviews__author-name {

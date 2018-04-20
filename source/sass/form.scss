@@ -1,6 +1,6 @@
 .form__label,
 .form__legend {
-  color: $pink;
+  color: $color-pink;
   font-size: $body-font-size;
   line-height: $body-font-size + 6px;
   text-transform: uppercase;
@@ -20,21 +20,21 @@
   line-height: 30px;
   border: 2px solid #e5e5e5;
   &::-webkit-input-placeholder {
-    color: $blue;
+    color: $color-blue;
   }
   &::-moz-placeholder {
-    color: $blue;
+    color: $color-blue;
   }
   &:-moz-placeholder  {
-    color: $blue;
+    color: $color-blue;
   }
   &:-ms-input-placeholder {
-    color: $blue;
+    color: $color-blue;
   }
 }
 
 .form__fieldset--gray {
-  background-color: $lightgrey;
+  background-color: $color-lightgrey;
 }
 
 .progress__list {
@@ -55,7 +55,7 @@
     left: -50px;
     width: 35px;
     height: 35px;
-    background-color: $white;
+    background-color: $color-white;
     border: 2px solid #e5e5e5;
   }
 }
@@ -67,8 +67,8 @@
   left: -45px;
   width: 25px;
   height: 10px;
-  border-bottom: 2px solid $pink;
-  border-left: 2px solid $pink;
+  border-bottom: 2px solid $color-pink;
+  border-left: 2px solid $color-pink;
   transform: rotate(-45deg);
 }
 
@@ -90,7 +90,7 @@
     left: -50px;
     width: 35px;
     height: 35px;
-    background-color: $white;
+    background-color: $color-white;
     border: 2px solid #e5e5e5;
     border-radius: 50%;
   }
@@ -103,7 +103,7 @@
   left: -38px;
   width: 15px;
   height: 15px;
-  background-color: $pink;
+  background-color: $color-pink;
   border-radius: 50%;
 }
 
@@ -113,19 +113,19 @@
   line-height: 30px;
   border: 2px solid #e5e5e5;
   &textarea:-moz-placeholder {
-  	color: $blue;
+  	color: $color-blue;
   }
   &textarea::-moz-placeholder {
-  	color: $blue;
+  	color: $color-blue;
   }
   &textarea::-webkit-input-placeholder {
-  	color: $blue;
+  	color: $color-blue;
   }
   &textarea:-ms-placeholder {
-  	color: $blue;
+  	color: $color-blue;
   }
   &textarea::placeholder {
-  	color: $blue;
+  	color: $color-blue;
   }
 }
 
@@ -138,6 +138,6 @@
   line-height: 30px;
   font-weight: 400;
   &--pink {
-    color: $pink;
+    color: $color-pink;
   }
 }

@@ -1,5 +1,5 @@
 .tariffs {
-  background-color: $lightgrey;
+  background-color: $color-lightgrey;
 }
 
 .tariffs__list {
@@ -8,8 +8,8 @@
 }
 
 .tariff__title {
-  color: $white;
-  background-color: $blue;
+  color: $color-white;
+  background-color: $color-blue;
   &--hit {
     background-image: url("../img/bg-hit.svg");
     background-position: top left;
