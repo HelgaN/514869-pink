@@ -1,0 +1,70 @@
+.tariffs {
+  background-color: $color-lightgrey;
+}
+
+.tariffs__list {
+  @include list-reset;
+  border-collapse: collapse;
+}
+
+.tariff__title {
+  color: $color-white;
+  background-color: $color-blue;
+  &--hit {
+    background-image: url("../img/bg-hit.svg");
+    background-position: top left;
+    background-repeat: no-repeat;
+  }
+}
+
+.tariff__name {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.tariff__price {
+font-size: 24px;
+line-height: 30px;
+font-weight: 300;
+}
+
+.tariff__filter,
+.tariff__smile,
+.tariff__comments {
+  padding: 20px;
+  line-height: $body-line-height + 6px;
+  text-transform: uppercase;
+  border: 2px solid #e5e5e5;
+}
+
+.tariff__filter--one,
+.tariff__smile-one {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 31px;
+    height: 21px;
+    top: 5px;
+    right: 5px;
+    background-image: url("../img/icon-yes.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.tariff__comments-off {
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "";
+    width: 27px;
+    height: 26px;
+    top: 5px;
+    right: 5px;
+    background-image: url("../img/icon-no.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

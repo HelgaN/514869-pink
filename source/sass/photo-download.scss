@@ -1,0 +1,107 @@
+.photo-download__wrapper {
+  padding: 45px 10px;
+  line-height: $body-line-height + 6px;
+}
+
+.photo-download__user-section {
+  background-color: $color-lightgrey;
+  padding-bottom: 45px;
+}
+
+.photo-download__editing-list {
+  @include list-reset;
+  margin-bottom: 35px;
+}
+
+.photo-download__editing-item {
+  width: 65px;
+  height: 65px;
+  outline: 2px solid red;
+  &--cut {
+    background-image: url("../img/icon-editor-crop.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &--color {
+    background-image: url("../img/icon-editor-fill.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &--saturation {
+    background-image: url("../img/icon-editor-contrast.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.photo-download__range-controls {
+  position: relative;
+}
+
+.photo-download__scale {
+  width: 240px;
+  height: 2px;
+  margin-bottom: 35px;
+  background-color: $color-blue;
+}
+
+.photo-download__range-toggle {
+  position: absolute;
+  top: -8px;
+  left: 180px;
+  width: 15px;
+  height: 15px;
+  background-color: $color-white;
+  border: 2px solid $color-pink;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.photo-download__button--post {
+  display: block;
+  width: 282px;
+  padding: 15px 35px;
+  margin-bottom: 15px;
+  color: $color-pink;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  background-color: transparent;
+  border: 3px solid $color-pink;
+  border-radius: 20px;
+  &:hover {
+    background-color: $color-pink;
+    color: $color-white;
+  }
+  &:active {
+    background-color: $color-pink;
+    color: rgba($color-white, 0.3);
+  }
+}
+
+.photo-download__button--cancel {
+  display: block;
+  width: 282px;
+  padding: 15px 35px;
+  color: rgba($color-blue, 0.1);
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  background-color: transparent;
+  border: 3px solid rgba($color-blue, 0.1);
+  border-radius: 20px;
+  &:hover {
+    color: rgba($color-blue, 0.3);
+    background-color: transparent;
+    border: 3px solid rgba($color-blue, 0.3);
+  }
+  &:active {
+    color: rgba($color-white, 0.3);
+    background-color: rgba($color-blue, 0.3);
+    border: 3px solid transparent;
+  }
+}

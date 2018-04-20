@@ -1,0 +1,11 @@
+.modal__title {
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: $body-line-height;
+  font-weight: 700;
+  text-align: center;
+}
+
+.modal__button {
+  @include button-green;
+}

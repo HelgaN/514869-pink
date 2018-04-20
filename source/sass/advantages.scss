@@ -1,0 +1,35 @@
+.advantages {
+  padding: 40px 0;
+}
+
+.advantages__tagline-one,
+.advantages__tagline-two {
+  font-weight: 300;
+  font-size: $body-font-size * 2;
+  line-height: $body-line-height;
+}
+
+.advantages__tagline-one {
+  margin-bottom: 30px;
+}
+
+.advantages__tagline-two {
+  margin-bottom: 60px;
+}
+
+.advantages__list {
+  @include list-reset;
+  padding-top: 55px;
+  background-color: $color-lightgrey;
+}
+
+.advantages__item {
+  margin-bottom: 35px;
+}
+
+.advantages__title {
+  margin-bottom: 15px;
+  font-size: $body-font-size + 4px;
+  line-height: $body-line-height;
+  font-weight: 700;
+}

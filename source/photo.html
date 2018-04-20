@@ -4,13 +4,14 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк - фотогалерея</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
   <header class="page-header">
-    <a class="page-header__logo">
-      <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="75" height="22" alt="Логотип «Пинк»">
+    <a class="page-header__logo" href="index.html">
+      <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип «Пинк»">
     </a>
 
     <nav class="main-navigation">
@@ -20,7 +21,7 @@
           <a class="main-navigation__link" href="index.html">Главная</a>
         </li>
         <li class="main-navigation__item">
-          <a class="main-navigation__link">Фотографии</a>
+          <a class="main-navigation__link main-navigation__link--curent">Фотографии</a>
         </li>
         <li class="main-navigation__item">
           <a class="main-navigation__link" href="form.html">Конкурс</a>
@@ -37,26 +38,30 @@
 
     <h1 class="page-inner__title page-inner__title-photos">Фотографии пользователей</h1>
 
-    <p class="page-inner__paragraph">Взгляните на фотографии, которые выкладывают пользователи!</p>
-    <p class="page-inner__paragraph">Видите, как не хватает ваших?</p>
+    <div class="page-inner__paragraph-wrapper">
+      <p class="page-inner__paragraph">Взгляните на фотографии, которые выкладывают пользователи!</p>
+      <p class="page-inner__paragraph">Видите, как не хватает ваших?</p>
+    </div>
 
     <section class="photogallery">
       <h2 class="visually-hidden">Фотогалерея</h2>
 
       <div class="photogallery__panorama">
-        <img class="photogallery__panorama-photo" src="img/panorama-day.svg" width="320" height="137" alt="Изображение панорамы дня">
-        <cite class="photogallery__panorama-author">Анна
+        <img class="photogallery__panorama-photo" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Изображение панорамы дня">
+        <div class="photogallery__panorama-wrapper">
+          <cite class="photogallery__panorama-author">Анна
         <span class="photogallery__panorama-time">(5 минут назад)</span>
       </cite>
-        <blockquote class="photogallery__panorama-blockquote">
-          Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
-        </blockquote>
-        <p class="photogallery__panorama-likes">Нравится: 215</p>
+          <blockquote class="photogallery__panorama-blockquote">
+            Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
+          </blockquote>
+          <p class="photogallery__panorama-likes">Нравится: 215</p>
+        </div>
       </div>
 
       <ul class="photogallery__list">
         <li class="photogallery__item">
-          <img class="photogallery__photo" src="img/photo-1.jpg" width="280" height="180" alt="Изображение съемки белого легкового автомобиля">
+          <img class="photogallery__photo" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Изображение съемки белого легкового автомобиля">
           <cite class="photogallery__author">Левон
           <span class="photogallery__time">(5 часов назад)</span>
         </cite>
@@ -66,7 +71,7 @@
           <p class="photogallery__likes">Нравится: 356</p>
         </li>
         <li class="photogallery__item">
-          <img class="photogallery__photo" src="img/photo-2.jpg" width="280" height="180" alt="Изображение барабанной установки">
+          <img class="photogallery__photo" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Изображение барабанной установки">
           <cite class="photogallery__author">Антон
           <span class="photogallery__time">(12 часов назад)</span>
         </cite>
@@ -76,7 +81,7 @@
           <span class="photogallery__likes">Нравится: 666</span>
         </li>
         <li class="photogallery__item">
-          <img class="photogallery__photo" src="img/photo-3.jpg" width="280" height="180" alt="Изображение стеклянного потолка с видом на небо">
+          <img class="photogallery__photo" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Изображение стеклянного потолка с видом на небо">
           <cite class="photogallery__author">Борис
           <span class="photogallery__time">(20 часов назад)</span>
         </cite>
@@ -86,7 +91,7 @@
           <p class="photogallery__likes">Нравится: 215</p>
         </li>
         <li class="photogallery__item">
-          <img class="photogallery__photo" src="img/photo-4.jpg" width="280" height="180" alt="Изображение большого тента с вывеской «Кубанская бахча»">
+          <img class="photogallery__photo" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Изображение большого тента с вывеской «Кубанская бахча»">
           <cite class="photogallery__author">Сергей
           <span class="photogallery__time">(25 часов назад)</span>
         </cite>
@@ -96,7 +101,7 @@
           <p class="photogallery__likes">Нравится: 4</p>
         </li>
         <li class="photogallery__item">
-          <img class="photogallery__photo" src="img/photo-5.jpg" width="280" height="180" alt="Изображение ног на краю камня в горах">
+          <img class="photogallery__photo" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Изображение ног на краю камня в горах">
           <cite class="photogallery__author">Максим
           <span class="photogallery__time">(40 часов назад)</span>
         </cite>
@@ -106,7 +111,7 @@
           <p class="photogallery__likes">Нравится: 150</p>
         </li>
         <li class="photogallery__item">
-          <img class="photogallery__photo" src="img/photo-6.jpg" width="280" height="180" alt="Изображение крыла самолета ">
+          <img class="photogallery__photo" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Изображение крыла самолета ">
           <cite class="photogallery__author">Надежда
           <span class="photogallery__time">(45 часов назад)</span>
         </cite>
@@ -121,11 +126,13 @@
 
     <section class="photo-download">
       <h2 class="visually-hidden">Загрузка фотографий</h2>
-      <p class="photo-download__paragraph">Затмите их всех!</p>
-      <p class="photo-download__paragraph">Выкладывайте все, что накопилось в телефоне!</p>
+      <div class="photo-download__wrapper">
+        <p class="photo-download__paragraph">Затмите их всех!</p>
+        <p class="photo-download__paragraph">Выкладывайте все, что накопилось в телефоне!</p>
+      </div>
 
       <div class="photo-download__user-section">
-        <img class="photo-download__photo" src="img/photo-7.jpg" width="280" height="374" alt="Изображение зимней трассы">
+        <img class="photo-download__photo" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Изображение зимней трассы">
 
         <ul class="photo-download__editing-list">
           <li class="photo-download__editing-item photo-download__editing-item--cut"><span class="visually-hidden">Редактировать размер изображения</span></li>
@@ -148,25 +155,27 @@
   </main>
 
   <footer class="page-footer page-footer--inner">
+    <a class="page-footer__logo" href="index.html">
+      <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип «Пинк»">
+    </a>
 
     <div class="page-footer__social social">
-
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--youtube" href="#">Мы на Ютубе</a>
-            </li>
-          </ul>
-        </div>
-        <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано:</b>
-          <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
-        </div>
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="#"><span class="visually-hidden">Мы в Твиттере</span></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Мы в Фейсбуке</span></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="#"><span class="visually-hidden">Мы на Ютубе</span></a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <p class="copyright__text">Разработано:</p>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
+    </div>
 
   </footer>
 

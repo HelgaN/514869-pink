@@ -1,0 +1,39 @@
+.page-header {
+  padding: 20px;
+  background-color: $color-darkblue;
+}
+
+.main-navigation__list {
+  @include list-reset;
+  background-color: $color-blue;
+}
+
+.main-navigation__item {
+  padding: 20px;
+  border-top: 1px solid #485461;
+  border-bottom: 1px solid #000101;
+}
+
+.main-navigation__link {
+  color: $color-white;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  &:hover {
+    color: $color-pink;
+  }
+  &:active {
+    color: rgba($color-pink, 0.3);
+  }
+}
+
+.main-navigation__link--curent {
+  &:hover {
+    color: $color-white;
+  }
+  &:active {
+    color: $color-white;
+  }
+}

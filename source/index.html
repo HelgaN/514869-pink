@@ -4,20 +4,21 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
   <header class="page-header">
     <a class="page-header__logo">
-      <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="75" height="22" alt="Логотип «Пинк»">
+      <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип «Пинк»">
     </a>
 
     <nav class="main-navigation">
       <button class="main-navigation__toggle" type="button">Открыть меню</button>
       <ul class="main-navigation__list">
         <li class="main-navigation__item">
-          <a class="main-navigation__link">Главная</a>
+          <a class="main-navigation__link main-navigation__link--curent">Главная</a>
         </li>
         <li class="main-navigation__item">
           <a class="main-navigation__link" href="photo.html">Фотографии</a>
@@ -42,15 +43,15 @@
 
         <a class="download__button" href="download.html">Скачать приложение</a>
 
-        <ul class="os__list">
-          <li class="os__item">
-            <img class="os__item-image" src="img/apple-logo.svg" width="47" height="56" alt="Логотип «Apple»">
+        <ul class="download__list">
+          <li class="download__item">
+            <img class="download__item-image" src="img/logo-apple.svg" width="47" height="56" alt="Логотип «Apple»">
           </li>
-          <li class="os__item">
-            <img class="os__item-image" src="img/android-logo.svg" width="43" height="47" alt="Логотип «Android»">
+          <li class="download__item">
+            <img class="download__item-image" src="img/logo-android.svg" width="43" height="47" alt="Логотип «Android»">
           </li>
-          <li class="os__item">
-            <img class="os__item-image" src="img/windows-logo.svg" width="44" height="41" alt="Логотип «Windows»">
+          <li class="download__item">
+            <img class="download__item-image" src="img/logo-microsoft.svg" width="44" height="41" alt="Логотип «Windows»">
           </li>
         </ul>
 
@@ -118,15 +119,15 @@
         <table class="tariffs__list">
           <tr>
             <th class="tariff__title">
-              <p class="tariff__name tariff__name--hit">Стандарт</p>
+              <p class="tariff__name">Стандарт</p>
+              <p class="tariff__price">3,99 USD</p>
+            </th>
+            <th class="tariff__title tariff__title--hit">
+              <p class="tariff__name">Стандарт</p>
               <p class="tariff__price">3,99 USD</p>
             </th>
             <th class="tariff__title">
-              <p class="tariff__name tariff__name--hit">Стандарт</p>
-              <p class="tariff__price">3,99 USD</p>
-            </th>
-            <th class="tariff__title">
-              <p class="tariff__name tariff__name--hit">Стандарт</p>
+              <p class="tariff__name">Стандарт</p>
               <p class="tariff__price">3,99 USD</p>
             </th>
           </tr>
@@ -196,7 +197,7 @@
         </li>
       </ul>
 
-      <img src="img/map.jpg" alt="Карта проезда" width="320" height="645">
+      <img src="../img/bg-map-mobile@1x.png" alt="Карта проезда" width="320" height="645">
 
     </div>
 
