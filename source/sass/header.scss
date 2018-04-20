@@ -1,6 +1,29 @@
 .page-header {
+  display: flex;
+  justify-content: space-between;
   padding: 20px;
   background-color: $darkblue;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__logo-image {
+    visibility: hidden;
+  }
+  .page-header__logo {
+    width: 147px;
+    height: 40px;
+    background-image: url("../img/logo-pink-blue-mobile.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-navigation__list {
+    display: flex;
+  }
+  .main-navigation__toggle {
+    display: none;
+  }
 }
 
 .main-navigation__list {

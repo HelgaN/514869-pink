@@ -1,3 +1,7 @@
+.modal {
+  padding: 40px 20px;
+}
+
 .modal__title {
   margin-bottom: 30px;
   font-size: 18px;
@@ -6,6 +10,11 @@
   text-align: center;
 }
 
+.modal__paragraph {
+  text-align: center;
+}
+
 .modal__button {
+  width: 100%;
   @include button-green;
 }

@@ -1,5 +1,12 @@
 .page-footer {
-  padding: 40px 0;
+  padding: 40px 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+  display: flex;
+  justify-content: space-between;
+  }
 }
 
 .page-footer__logo {

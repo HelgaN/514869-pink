@@ -1,3 +1,21 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+.form__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .form__wrapper {
+  flex-direction: row;
+  align-items: center;
+  }
+}
+
 .form__label,
 .form__legend {
   color: $pink;
@@ -6,16 +24,24 @@
   text-transform: uppercase;
 }
 
+.form__label {
+  padding-left: 20px;
+}
+
 .form__legend {
   margin-bottom: 45px;
+  text-align: center;
 }
 
 .form__fieldset {
   border: none;
+  padding: 0;
 }
 
 .form__input {
-  padding: 15px 20px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px;
   font-size: 18px;
   line-height: 30px;
   border: 2px solid #e5e5e5;
@@ -108,7 +134,10 @@
 }
 
 .form__textarea {
+  width: 100%;
+  box-sizing: border-box;
   padding: 15px 20px;
+  margin-bottom: 50px;
   font-size: 18px;
   line-height: 30px;
   border: 2px solid #e5e5e5;
@@ -131,13 +160,46 @@
 
 .form__button {
   @include button-green;
+  width: 100%;
 }
 
 .form__required-info {
   font-size: 18px;
   line-height: 30px;
   font-weight: 400;
+  text-align: center;
   &--pink {
     color: $pink;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form__fieldset:first-child {
+    order: 0;
+  }
+  .form__fieldset:nth-child(2) {
+    order: 3;
+  }
+  .form__fieldset:nth-child(3) {
+    order: 1;
+  }
+  .form__fieldset:nth-child(3) {
+    order: 2;
+  }
+  .form__fieldset:nth-child(5) {
+    order: 4;
+  }
+  .form__wrapper--row {
+    display: flex;
+    justify-content: space-between;
+    order: 5;
+  }
+  .form__button {
+    width: 300px;
+    box-sizing: border-box;
+  }
+  .form__required-info {
+    width: 300px;
+    box-sizing: border-box;
   }
 }

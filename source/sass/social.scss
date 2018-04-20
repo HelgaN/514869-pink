@@ -1,6 +1,12 @@
 .social__list {
+  display: flex;
+  justify-content: center;
   @include list-reset;
   margin-bottom: 40px;
+}
+
+.social__item {
+  margin-right: 15px;
 }
 
 .social__link {
