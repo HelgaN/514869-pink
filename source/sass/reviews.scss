@@ -1,5 +1,8 @@
 .reviews__wrapper {
+  width: 320px;
+  box-sizing: border-box;
   padding: 45px 20px;
+  margin: 0 auto;
 }
 
 .reviews__list {
@@ -31,6 +34,9 @@
 }
 
 @media (min-width: $tablet-width) {
+  .reviews__wrapper {
+    width: $tablet-width;
+  }
   .reviews__item {
     display: flex;
     flex-direction: column;
@@ -70,6 +76,7 @@
 
 @media (min-width: $desktop-width) {
   .reviews__wrapper {
+    width: $desktop-width;
     padding: 45px 130px;
   }
   .reviews__text {

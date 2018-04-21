@@ -13,6 +13,7 @@
 <body>
 
   <header class="page-header">
+    <div class="page-header__wrapper">
     <a class="page-header__logo" href="index.html">
       <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип «Пинк»">
     </a>
@@ -35,11 +36,13 @@
       </ul>
 
     </nav>
+  </div>
   </header>
 
   <main class="page-inner">
-
-    <h1 class="page-inner__title page-inner__title-photos">Фотографии пользователей</h1>
+    <div class="page-inner__paragraph-wrapper--bg">
+      <h1 class="page-inner__title page-inner__title-photos">Фотографии пользователей</h1>
+    </div>
 
     <div class="page-inner__paragraph-wrapper">
       <p class="page-inner__paragraph">Взгляните на фотографии, которые выкладывают пользователи!</p>
@@ -62,6 +65,7 @@
         </div>
       </div>
 
+      <div class="photogallery__wrapper">
       <ul class="photogallery__list">
         <li class="photogallery__item">
           <img class="photogallery__photo" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Изображение съемки белого легкового автомобиля">
@@ -124,6 +128,7 @@
           <p class="photogallery__likes">Нравится: 2560</p>
         </li>
       </ul>
+    </ul>
 
     </section>
 
@@ -135,6 +140,7 @@
       </div>
 
       <div class="photo-download__user-section">
+        <div class="photo-download__wrapper">
         <img class="photo-download__photo" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Изображение зимней трассы">
 
         <div class="photo-download__container">
@@ -153,13 +159,15 @@
         <button class="photo-download__button photo-download__button--cancel" type="reset">Отмена</button>
 
       </div>
-    </div>
+      </div>
+      </div>
 
     </section>
 
   </main>
 
   <footer class="page-footer page-footer--inner">
+    <div class="page-footer__wrapper">
     <a class="page-footer__logo" href="index.html">
       <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип «Пинк»">
     </a>
@@ -181,6 +189,7 @@
       <p class="copyright__text">Разработано</p>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
     </div>
+  </div>
 
   </footer>
 

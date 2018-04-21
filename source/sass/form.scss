@@ -1,16 +1,19 @@
 .form {
+  width: 320px;
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
   padding: 0 20px;
+  margin: 0 auto;
 }
 
-.form__wrapper {
+.form__wrapper--col {
   display: flex;
   flex-direction: column;
 }
 
 @media (min-width: $tablet-width) {
-  .form__wrapper {
+  .form__wrapper--col {
   flex-direction: row;
   align-items: center;
   }
@@ -174,6 +177,9 @@
 }
 
 @media (min-width: $tablet-width) {
+  .form {
+    width: $tablet-width;
+  }
   .form__fieldset:first-child {
     order: 0;
   }
@@ -201,5 +207,37 @@
   .form__required-info {
     width: 300px;
     box-sizing: border-box;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    width: $desktop-width;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 130px;
+  }
+  .form__wrapper--col {
+    flex-direction: row;
+  }
+  .progress__list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .progress__item {
+    width: 260px;
+  }
+  .form__fieldset--name,
+  .form__fieldset--apps {
+    width: 450px;
+  }
+  .form__fieldset--contacts,
+  .form__fieldset--textarea {
+    width: 100%;
+  }
+  .form__wrapper--row {
+    width: 100%;
   }
 }

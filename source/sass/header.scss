@@ -1,8 +1,14 @@
 .page-header {
+  background-color: $color-darkblue;
+}
+
+.page-header__wrapper {
+  width: 320px;
+  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  background-color: $color-darkblue;
+  margin: 0 auto;
 }
 
 .main-navigation__toggle {
@@ -14,6 +20,10 @@
 
 
 @media (min-width: $tablet-width) {
+  .page-header__wrapper {
+    min-width: $tablet-width;
+    padding: 20px 20px;
+  }
   .page-header__logo-image {
     visibility: hidden;
   }
@@ -41,7 +51,8 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-header {
+  .page-header__wrapper {
+    min-width: $desktop-width;
     padding: 20px 130px;
   }
   .main-navigation__list {

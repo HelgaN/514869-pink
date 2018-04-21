@@ -2,6 +2,12 @@
   background-color: $color-lightgrey;
 }
 
+.tariffs__wrapper {
+  width: 320px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
 .tariffs__list {
   @include list-reset;
   border-collapse: collapse;
@@ -98,6 +104,7 @@ font-weight: 300;
 
 @media (min-width: $tablet-width) {
   .tariffs__wrapper {
+    width: $tablet-width;
     padding: 0 20px;
   }
   .tariff__hidden {
@@ -144,6 +151,7 @@ font-weight: 300;
 
 @media (min-width: $desktop-width) {
   .tariffs__wrapper {
+    width: $desktop-width;
     padding: 0 130px;
   }
 }

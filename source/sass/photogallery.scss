@@ -1,5 +1,6 @@
 .photogallery__panorama {
   position: relative;
+  background-color: $color-lightgrey;
   &::before {
     position: absolute;
     content: "Панорама дня";
@@ -16,20 +17,40 @@
   }
 }
 
+.photogallery__panorama-photo {
+  width: 100%;
+}
+
 @media (min-width: $tablet-width) {
-  .photogallery__panorama-photo {
-    width: 100%;
-  }
   .photogallery__panorama::before {
     left: 500px;
   }
 }
 
 .photogallery__panorama-wrapper {
+  width: 320px;
+  box-sizing: border-box;
   padding: 0 20px;
-  background-color: $color-lightgrey;
+  margin: 0 auto;
   .photogallery__panorama-blockquote {
     margin: 0 15px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .photogallery__panorama-wrapper {
+    width: $tablet-width;
+    background-color: $color-lightgrey;
+  }
+  .photogallery__panorama {
+    background-color: #ffffff;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photogallery__panorama-wrapper {
+    width: $desktop-width;
+    padding: 0 130px;
   }
 }
 
@@ -63,6 +84,26 @@
   }
 }
 
+.photogallery__wrapper {
+  width: 320px;
+  box-sizing: border-box;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .photogallery__wrapper {
+    width: $tablet-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photogallery__wrapper {
+    width: $desktop-width;
+    padding: 0 130px;
+  }
+}
+
 .photogallery__list {
   display: flex;
   flex-direction: column;
@@ -72,7 +113,6 @@
 .photogallery__item {
   display: flex;
   flex-direction: column;
-  padding: 0 20px;
   background-color: $color-lightgrey;
 }
 
@@ -81,7 +121,6 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 0 20px;
   }
   .photogallery__item {
   width: 300px;

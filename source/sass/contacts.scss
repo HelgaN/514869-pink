@@ -1,5 +1,4 @@
 .contacts__tagline {
-  padding: 0 20px;
   font-size: 24px;
   line-height: $body-line-height;
   font-weight: 300;
@@ -14,7 +13,6 @@
 }
 
 .contacts__item {
-  padding: 0 20px;
   margin-bottom: 25px;
 }
 
@@ -39,6 +37,12 @@
   height: auto;
 }
 
+@media (max-width: $tablet-width) {
+  .page-footer--main .page-footer__social {
+    display: none;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .contacts__list {
     display: flex;
@@ -49,12 +53,6 @@
     width: 300px;
   }
   .contacts__map {
-    width: 660px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .contacts__map {
-    width: 1200px;
+    width: 100%;
   }
 }

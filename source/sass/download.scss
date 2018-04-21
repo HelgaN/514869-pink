@@ -1,14 +1,20 @@
 .download {
+  background-color: $color-blue;
+  background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
+  background-size: auto 400px, cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.download__wrapper {
+  width: 320px;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 424px 20px 35px;
+  margin: 0 auto;
   color: $color-white;
-  background-color: $color-blue;
-  background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
-  background-size: auto 400px, auto 400px;
-  background-position: top center;
-  background-repeat: no-repeat;
 }
 
 .download__lead {
@@ -59,14 +65,15 @@
 
 @media (min-width: $tablet-width) {
   .download {
+    background-position: bottom right 25%, center;
+    background-size: auto 500px, cover;
+  }
+  .download__wrapper {
+    width: $tablet-width;
     align-items: left;
-    box-sizing: border-box;
-    // временно
     height: 620px;
     // временно
-    padding: 90px 130px;;
-    background-size: 470px auto, contain;
-    background-position: 80% bottom, top center;
+    padding: 90px 20px;
   }
 
   .download__lead {
@@ -88,5 +95,28 @@
 
   .download__info {
     width: 300px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .download {
+    background-position: 60% bottom, center;
+    background-size: auto 600px, cover;
+  }
+  .download__wrapper {
+    width: $desktop-width;
+    align-items: left;
+    height: 620px;
+    // временно
+    padding: 90px 130px;
+  }
+  .download__lead {
+    margin-bottom: 50px;
+  }
+  .download__button {
+    margin-bottom: 50px;
+  }
+  .download__list {
+    margin-bottom: 50px;
   }
 }
