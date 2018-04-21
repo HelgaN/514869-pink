@@ -62,12 +62,17 @@
 }
 
 @media (min-width: $tablet-width) {
+  .advantages__tagline-two {
+    width:370px;
+    margin: 0 auto 50px;
+  }
   .advantages__list {
     display: flex;
     flex-direction: column;
     padding-bottom: 0;
-    background-position: top left;
-    background-size: 40%;
+    margin-bottom: 60px;
+    background-position: 20px 100px;
+    background-size: 270px auto;
   }
   .advantages__item {
     width: 320px;
@@ -77,13 +82,16 @@
     display: flex;
     flex-direction: column;
     padding: 0 20px;
-    background-image: url("../img/htmlacademy.svg");
-    background-position: bottom left;
+    margin-bottom: 60px;
+    background-image: url("../img/timer.png");
+    background-position: 20px bottom;
     background-repeat: no-repeat;
   }
   .advantages__effect-title {
     width: 320px;
+    box-sizing: border-box;
     margin-left: auto;
+    padding-right: 140px;
   }
   .advantages__effect-info {
     width: 320px;
@@ -99,6 +107,8 @@
   .advantages__list {
     flex-direction: row;
     padding-top: 350px;
+    padding-left: 130px;
+    padding-right: 130px;
     background-image: none;
   }
   .advantages__item {
@@ -113,5 +123,19 @@
       background-image: url("../img/iphone-screen-mobile@1x.png");
       background-repeat: no-repeat;
     }
+  }
+  .advantages__effect {
+    padding: 60px 130px;
+    background-color: $color-lightgrey;
+    background-position: 130px 20px;
+  }
+  .advantages__effect-title {
+    width: 570px;
+  }
+  .advantages__effect-info {
+    width: 570px;
+  }
+  .advantages__effect-link {
+    width: 570px;
   }
 }

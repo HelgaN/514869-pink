@@ -18,7 +18,7 @@
     </a>
 
     <nav class="main-navigation">
-      <button class="main-navigation__toggle" type="button">Открыть меню</button>
+      <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-navigation__list">
         <li class="main-navigation__item">
           <a class="main-navigation__link main-navigation__link--curent">Главная</a>
@@ -118,9 +118,9 @@
             <button class="reviews__next" type="button">Следующий отзыв</button>-->
         </div>
         <p class="reviews__toggles">
-          <button class="review__toggle" type="button">1</button>
-          <button class="review__toggle" type="button">2</button>
-          <button class="review__toggle" type="button">3</button>
+          <button class="review__toggle review__toggle--active" type="button"><span class="visually-hidden">1</span></button>
+          <button class="review__toggle" type="button"><span class="visually-hidden">2</span></button>
+          <button class="review__toggle" type="button"><span class="visually-hidden">3</span></button>
         </p>
       </div>
     </section>
@@ -131,49 +131,53 @@
 
         <table class="tariffs__list">
           <tr>
+            <th class="tariff__hidden"></th>
             <th class="tariff__title">
-              <p class="tariff__name">Стандарт</p>
-              <p class="tariff__price">3,99 USD</p>
+              <p class="tariff__name">База</p>
+              <p class="tariff__price">1,99 USD</p>
             </th>
             <th class="tariff__title tariff__title--hit">
               <p class="tariff__name">Стандарт</p>
               <p class="tariff__price">3,99 USD</p>
             </th>
             <th class="tariff__title">
-              <p class="tariff__name">Стандарт</p>
-              <p class="tariff__price">3,99 USD</p>
+              <p class="tariff__name">Анлим</p>
+              <p class="tariff__price">9,99 USD</p>
             </th>
           </tr>
           <tr>
-            <td class="tariff__filter">
+            <td class="tariff__hidden">Розовый фильтр</td>
+            <td class="tariff__filter tariff__filter--on">
               Розовый фильтр
             </td>
-            <td class="tariff__filter tariff__filter--one">
+            <td class="tariff__filter tariff__filter--on">
               Розовый фильтр
             </td>
-            <td class="tariff__filter">
+            <td class="tariff__filter tariff__filter--on">
               Розовый фильтр
             </td>
           </tr>
           <tr>
-            <td class="tariff__smile">
+            <td class="tariff__hidden">Смайлики</td>
+            <td class="tariff__smile tariff__smile--off">
               Смайлики
             </td>
-            <td class="tariff__smile tariff__smile-one">
+            <td class="tariff__smile tariff__smile--on">
               Смайлики
             </td>
-            <td class="tariff__smile">
+            <td class="tariff__smile tariff__smile--on">
               Смайлики
             </td>
           </tr>
           <tr>
-            <td class="tariff__comments">
+            <td class="tariff__hidden">Комментарии</td>
+            <td class="tariff__comments tariff__comments--on">
               Комментарии
             </td>
-            <td class="tariff__comments tariff__comments-off">
+            <td class="tariff__comments tariff__comments--off">
               Комментарии
             </td>
-            <td class="tariff__comments">
+            <td class="tariff__comments tariff__comments--off">
               Комментарии
             </td>
           </tr>
@@ -181,9 +185,9 @@
         </table>
 
         <p class="tariff__toggles">
-          <button class="tariff__toggle" type="button">1</button>
-          <button class="tariff__toggle" type="button">2</button>
-          <button class="tariff__toggle" type="button">3</button>
+          <button class="tariff__toggle" type="button"><span class="visually-hidden">1</span></button>
+          <button class="tariff__toggle tariff__toggle--active" type="button"><span class="visually-hidden">2</span></button>
+          <button class="tariff__toggle" type="button"><span class="visually-hidden">3</span></button>
         </p>
       </div>
     </section>
@@ -209,9 +213,7 @@
           <p class="contacts__info">ул. Большая Конюшенная, 19/8 </p>
         </li>
       </ul>
-
       <img class="contacts__map" src="../img/bg-map-mobile@1x.png" alt="Карта проезда" width="320" height="645">
-
     </div>
 
   </footer>
