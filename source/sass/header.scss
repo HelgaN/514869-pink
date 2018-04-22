@@ -1,5 +1,7 @@
 .page-header {
-  background-color: $color-darkblue;
+  position: relative;
+  top: 66px;
+  background-color: $color-blue;
 }
 
 .page-header__wrapper {
@@ -12,12 +14,36 @@
 }
 
 .main-navigation__toggle {
+  position: relative;
   width: 50px;
   height: 25px;
-  background-image: linear-gradient(to bottom, #ffffff 0px, #ffffff 5px, $color-darkblue 5px, $color-darkblue 10px, #ffffff 10px, #ffffff 15px, $color-darkblue 15px, $color-darkblue 20px, #ffffff 20px, #ffffff 25px);
+  /*background-image: linear-gradient(to bottom, #ffffff 0px, #ffffff 5px, $color-darkblue 5px, $color-darkblue 10px, #ffffff 10px, #ffffff 15px, $color-darkblue 15px, $color-darkblue 20px, #ffffff 20px, #ffffff 25px);
+  border: none;*/
+  background-color: transparent;
   border: none;
 }
 
+.main-navigation__toggle::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 25%;
+  width: 30px;
+  height: 3px;
+  background-color: red;
+  transform: rotate(45deg);
+}
+
+.main-navigation__toggle::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 25%;
+  width: 30px;
+  height: 3px;
+  background-color: red;
+  transform: rotate(-45deg);
+}
 
 @media (min-width: $tablet-width) {
   .page-header__wrapper {
@@ -37,12 +63,13 @@
 
 @media (max-width: $desktop-width - 1) {
   .page-header {
-    margin-top: 325px;   // временно
-    position: relative;
+    top: -240px;
+    margin-top: 240px;   // временно
   }
   .main-navigation__list {
     position: absolute;
-    top: -325px;
+    /*top: -325px;*/
+    top: 66px;
     left: 0;
     box-sizing: border-box;
     width: 100%;
@@ -51,6 +78,9 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-header {
+    top: 0;
+  }
   .page-header__wrapper {
     min-width: $desktop-width;
     padding: 20px 130px;

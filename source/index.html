@@ -133,6 +133,20 @@
       <div class="tariffs__wrapper">
         <h2 class="visually-hidden">Доступные тарифы</h2>
 
+        <!--  <button class="tariff__toggle" type="button"><span class="visually-hidden">1</span></button>
+          <button class="tariff__toggle tariff__toggle--active" type="button"><span class="visually-hidden">2</span></button>
+          <button class="tariff__toggle" type="button"><span class="visually-hidden">3</span></button>
+-->
+        <input class="visually-hidden" type="radio" id="product-1" name="toggle">
+        <input class="visually-hidden" type="radio" id="product-2" name="toggle" checked>
+        <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+        <div class="tariff__toggles--wrapper">
+          <label class="tariff__toggle tariff__toggle--1" for="product-1">Первый</label>
+          <label class="tariff__toggle tariff__toggle--2" for="product-2">Второй</label>
+          <label class="tariff__toggle tariff__toggle--3" for="product-3">Третий</label>
+        </div>
+
+
         <table class="tariffs__list">
           <tr>
             <th class="tariff__hidden"></th>
@@ -188,19 +202,15 @@
 
         </table>
 
-        <p class="tariff__toggles">
-          <button class="tariff__toggle" type="button"><span class="visually-hidden">1</span></button>
-          <button class="tariff__toggle tariff__toggle--active" type="button"><span class="visually-hidden">2</span></button>
-          <button class="tariff__toggle" type="button"><span class="visually-hidden">3</span></button>
-        </p>
       </div>
     </section>
 
   </main>
 
   <footer class="page-footer page-footer--main">
-    <div class="page-footer__wrapper">
+
     <div class="page-footer__contacts contacts">
+      <div class="page-footer__wrapper">
       <p class="contacts__tagline">Остались вопросы?</p>
       <p class="contacts__tagline">Свяжитесь с нами!</p>
 
@@ -220,7 +230,7 @@
       </ul>
     </div>
   </div>
-    <img class="contacts__map" src="../img/bg-map-mobile@1x.png" alt="Карта проезда" width="320" height="645">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123647!2d30.320894615623924!3d59.938796869048474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sby!4v1524398075909" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
     <div class="page-footer__social">
       <div class="page-footer__wrapper">
       <a class="page-footer__logo" href="index.html">
