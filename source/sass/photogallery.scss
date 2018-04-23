@@ -1,5 +1,6 @@
 .photogallery__panorama {
   position: relative;
+  background-color: $color-lightgrey;
   &::before {
     position: absolute;
     content: "Панорама дня";
@@ -16,11 +17,45 @@
   }
 }
 
+.photogallery__panorama-photo {
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .photogallery__panorama::before {
+    left: 500px;
+  }
+}
+
 .photogallery__panorama-wrapper {
-  background-color: $color-lightgrey;
+  width: 320px;
+  box-sizing: border-box;
+  padding: 0 20px;
+  margin: 0 auto;
+  .photogallery__panorama-blockquote {
+    margin: 0 15px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .photogallery__panorama-wrapper {
+    width: $tablet-width;
+    background-color: $color-lightgrey;
+  }
+  .photogallery__panorama {
+    background-color: #ffffff;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photogallery__panorama-wrapper {
+    width: $desktop-width;
+    padding: 0 130px;
+  }
 }
 
 .photogallery__panorama-author {
+  margin: 0 15px;
   font-weight: 700;
   .photogallery__panorama-time {
     font-size: 12px;
@@ -32,7 +67,7 @@
 
 .photogallery__panorama-likes {
   position: relative;
-  margin-left: 60px;
+  margin-left: 50px;
   color: $color-pink;
   font-size: 12px;
   line-height: 24px;
@@ -44,20 +79,57 @@
     width: 13px;
     height: 12px;
     top: 5px;
-    left: -30px;
+    left: -35px;
     background-image: url("../img/icon-heart.svg");
   }
 }
 
+.photogallery__wrapper {
+  width: 320px;
+  box-sizing: border-box;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .photogallery__wrapper {
+    width: $tablet-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photogallery__wrapper {
+    width: $desktop-width;
+    padding: 0 130px;
+  }
+}
+
 .photogallery__list {
+  display: flex;
+  flex-direction: column;
   @include list-reset;
 }
 
 .photogallery__item {
+  display: flex;
+  flex-direction: column;
   background-color: $color-lightgrey;
 }
 
+@media (min-width: $tablet-width) {
+  .photogallery__list {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .photogallery__item {
+  width: 300px;
+  padding: 0;
+  }
+}
+
 .photogallery__author {
+  padding: 0 15px;
   font-weight: 700;
   .photogallery__time {
     font-size: 12px;
@@ -67,9 +139,13 @@
   }
 }
 
+.photogallery__blockquote {
+  margin: 0 15px;
+}
+
 .photogallery__likes {
   position: relative;
-  margin-left: 60px;
+  margin-left: 50px;
   color: $color-pink;
   font-size: 12px;
   line-height: 24px;

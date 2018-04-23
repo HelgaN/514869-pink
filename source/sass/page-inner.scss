@@ -1,10 +1,26 @@
 .page-inner__title {
   display: block;
+  box-sizing: border-box;
   padding: 30px 20px 80px 20px;
+  margin: 0 auto;
   color: $color-white;
   font-size: 24px;
   line-height: $body-line-height;
   font-weight: 300;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .page-inner__title {
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 130px;
+    font-size: 50px;
+    line-height: 50px;
+  }
+}
+
+.page-inner__paragraph-wrapper--bg {
   background-color: $color-blue;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -12,6 +28,28 @@
 }
 
 .page-inner__paragraph-wrapper {
+  width: 320px;
+  box-sizing: border-box;
   padding: 50px 20px;
+  margin: 0 auto;
   line-height: $body-line-height + 6px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-inner__paragraph-wrapper {
+    width: $tablet-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-inner__paragraph-wrapper {
+    width: $desktop-width;
+  }
+  .page-inner__title {
+    width: $desktop-width;
+  }
+}
+
+.page-inner__paragraph {
+  text-align: center;
 }

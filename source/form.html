@@ -5,11 +5,15 @@
   <meta charset="utf-8">
   <title>HTML Academy: Пинк - конкурс</title>
   <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="css/normalize.css">
 </head>
 
 <body>
 
   <header class="page-header">
+    <div class="page-header__wrapper">
     <a class="page-header__logo" href="index.html">
       <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип «Пинк»">
     </a>
@@ -32,26 +36,29 @@
       </ul>
 
     </nav>
+  </div>
   </header>
 
   <main class="page-inner">
-    <h1 class="page-inner__title page-inner__title-contest">Конкурс на самое безбашенное путешествие с Пинк</h1>
+    <div class="page-inner__paragraph-wrapper--bg">
+     <h1 class="page-inner__title page-inner__title-contest">Конкурс на самое безбашенное путешествие с Пинк</h1>
+    </div>
     <div class="page-inner__paragraph-wrapper">
       <p class="page-inner__paragraph">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
     </div>
 
     <form class="form" action="https://echo.htmlacademy.ru" method="post">
-      <fieldset class="form__fieldset">
+      <fieldset class="form__fieldset form__fieldset--name">
         <legend class="visually-hidden">ФИО</legend>
-        <p>
+        <p class="form__wrapper--col">
           <label class="form__label" for="user-surname">Фамилия:</label>
           <input class="form__input" id="user-surname" type="text" name="surname" placeholder="Укажите фамилию *">
         </p>
-        <p>
+        <p class="form__wrapper--col">
           <label class="form__label" for="user-name">Имя:</label>
           <input class="form__input" id="user-name" type="text" name="name" placeholder="Введите ваше имя *">
         </p>
-        <p>
+        <p class="form__wrapper--col">
           <label class="form__label" for="user-patronymic">Отчество:</label>
           <input class="form__input" id="user-patronymic" type="text" name="patronymic" placeholder="Ну и отчество тоже">
         </p>
@@ -87,7 +94,7 @@
         </ul>
       </fieldset>
 
-      <fieldset class="form__fieldset">
+      <fieldset class="form__fieldset form__fieldset--contacts">
         <legend class="visually-hidden">Контактная информация</legend>
         <p>
           <label class="form__label" for="phone">Номер телефона</label>
@@ -99,7 +106,7 @@
         </p>
       </fieldset>
 
-      <fieldset class="form__fieldset form__fieldset--gray">
+      <fieldset class="form__fieldset form__fieldset--gray form__fieldset--apps">
         <legend class="form__legend">С каким приложением путешествовали?</legend>
         <ul class="apps__list">
           <li class="apps__item">
@@ -117,19 +124,21 @@
         </ul>
       </fieldset>
 
-      <fieldset class="form__fieldset">
-        <legend class="form__legend">Опишите свои эмоции
+      <fieldset class="form__fieldset form__fieldset--textarea">
+        <legend class="form__legend">Опишите свои эмоции</legend>
           <textarea class="form__textarea" name="user-message" rows="6" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-        </legend>
       </fieldset>
 
+      <div class="form__wrapper--row">
       <button class="form__button" type="submit">Отправить форму</button>
-      <p class="form__required-info"><span class="form__required-info--pink">*</span> — обязательные для заполнения поля</p>
+      <p class="form__required-info"><span class="form__required-info--pink">*</span> — обязательные поля</p>
+    </div>
     </form>
 
   </main>
 
   <footer class="page-footer page-footer--inner">
+    <div class="page-footer__wrapper">
     <a class="page-footer__logo" href="index.html">
       <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип «Пинк»">
     </a>
@@ -149,10 +158,10 @@
       </ul>
     </div>
     <div class="page-footer__copyright copyright">
-      <p class="copyright__text">Разработано:</p>
+      <p class="copyright__text">Разработано</p>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
     </div>
-
+  </div>
   </footer>
 
   <section class="modal modal-sent">
@@ -170,7 +179,9 @@
 
     <p class="modal__title">Что-то пошло не так!</p>
     <p class="modal__paragraph">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-    <button class="modal__button" type="button">Ok</button>
+    <div class="modal__button--background">
+      <button class="modal__button" type="button">Ok</button>
+    </div>
   </section>
 
 </body>
