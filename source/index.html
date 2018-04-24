@@ -103,6 +103,15 @@
     <section class="reviews">
       <div class="reviews__wrapper">
         <h2 class="visually-hidden">Отзывы о приложении</h2>
+      <div class="reviews__toggles-block--wrapper">
+        <input class="visually-hidden" type="radio" id="review-1" name="toggle-r"  checked>
+        <input class="visually-hidden" type="radio" id="review-2" name="toggle-r">
+        <input class="visually-hidden" type="radio" id="review-3" name="toggle-r">
+        <div class="reviews__toggles--wrapper">
+          <label class="reviews__toggle reviews__toggle--1" for="review-1">Первый</label>
+          <label class="reviews__toggle reviews__toggle--2" for="review-2">Второй</label>
+          <label class="reviews__toggle reviews__toggle--3" for="review-3">Третий</label>
+        </div>
         <div class="reviews__list">
           <blockquote class="reviews__item">
             <cite class="reviews__author-name">Николай Петров</cite>
@@ -110,22 +119,23 @@
             <p class="reviews__author-status">25 лет, водитель трамвая</p>
           </blockquote>
           <blockquote class="reviews__item">
-            <cite class="reviews__author-name"></cite>
-            <p class="reviews__text"></p>
+            <cite class="reviews__author-name">Вася Васильев</cite>
+            <p class="reviews__text">«Прикольное приложение. Мне понравилось.»</p>
+            <p class="reviews__author-status">19 лет, студент</p>
           </blockquote>
           <blockquote class="reviews__item">
-            <p class="reviews__author-picture">
-              <cite class="reviews__author-name"></cite>
-              <p class="reviews__text"></p>
+              <cite class="reviews__author-name">Владимир Иванов</cite>
+              <p class="reviews__text">«Я в полнейшем восторге! Одно из лучших приложений, которое я скачивал за последние полгода!»</p>
+              <p class="reviews__author-status">48 лет, копирайтер</p>
           </blockquote>
           <!--<button class="reviews__prev" type="button">Предыдущий отзыв</button>
             <button class="reviews__next" type="button">Следующий отзыв</button>-->
         </div>
-        <p class="reviews__toggles">
+        <!--<p class="reviews__toggles">
           <button class="review__toggle review__toggle--active" type="button"><span class="visually-hidden">1</span></button>
           <button class="review__toggle" type="button"><span class="visually-hidden">2</span></button>
           <button class="review__toggle" type="button"><span class="visually-hidden">3</span></button>
-        </p>
+        </p>-->
       </div>
     </section>
 

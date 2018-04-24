@@ -1,16 +1,28 @@
 .reviews__wrapper {
+  position: relative;
   width: 320px;
+  min-height: 360px;
   box-sizing: border-box;
-  padding: 45px 20px;
+  padding: 45px 20px 50px 20px;
   margin: 0 auto;
+}
+
+.reviews__toggles--wrapper {
+  position: absolute;
+  display: flex;
+  left: calc(50% - 26px);
+  bottom: 50px;
+  font-size: 0;
 }
 
 .reviews__list {
   @include list-reset;
+  margin-bottom: 32px;
   background-color: $color-white;
 }
 
 .reviews__item {
+  width: 100%;
   margin: 0;
   text-align: center;
 }
@@ -31,6 +43,60 @@
 .reviews__author-status {
   display: none;
   line-height: $body-line-height + 6px;
+}
+
+@media (max-width: $mobile-width-only) {
+  .reviews__item {
+    display: none;
+  }
+
+  .reviews__toggle {
+    position: relative;
+    width: 6px;
+    height: 6px;
+    padding: 0;
+    margin-right: 17px;
+    background-color: #b5b9be;
+    border-radius: 50%;
+    border: none;
+  }
+
+  .review__toggle:hover {
+    background-color: #7e868f;
+  }
+
+  .review__toggle:active {
+    background-color: #e9ebec;
+  }
+
+  #review-1:checked ~ .reviews__list .reviews__item:nth-child(1) {
+    display: block;
+  }
+
+  #review-2:checked ~ .reviews__list .reviews__item:nth-child(2) {
+    display: block;
+  }
+
+  #review-3:checked ~ .reviews__list .reviews__item:last-child {
+    display: block;
+  }
+
+  #review-1:checked ~ .reviews__toggles--wrapper .reviews__toggle--1::before,
+  #review-2:checked ~ .reviews__toggles--wrapper .reviews__toggle--2::before,
+  #review-3:checked ~ .reviews__toggles--wrapper .reviews__toggle--3::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 2;
+    margin: -5.5px;
+    box-sizing: border-box;
+    width: 11px;
+    height: 11px;
+    background-color: #ffffff;
+    border: 3px solid $color-darkblue;
+    border-radius: 50%;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -55,13 +121,14 @@
   display: flex;
   justify-content: center;
   align-items: baseline;
+  margin-left: 10px;        /* для соответствия макету */
 }
 
 .review__toggle {
   width: 6px;
   height: 6px;
   padding: 0;
-  margin-right: 15px;
+  margin-right: 17px;
   background-color: #bec2c7;
   border-radius: 50%;
   border: none;
