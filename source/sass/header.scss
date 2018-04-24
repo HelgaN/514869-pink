@@ -13,6 +13,14 @@
   margin: 0 auto;
 }
 
+.page-header__logo-image:hover path {
+  fill: $color-pink;
+}
+
+.page-header__logo-image:active path {
+  fill: rgba($color-pink, 0.3);
+}
+
 .main-navigation__list {
   @include list-reset;
 }

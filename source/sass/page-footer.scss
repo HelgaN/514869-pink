@@ -5,20 +5,20 @@
 .page-footer__wrapper {
   width: 320px;
   box-sizing: border-box;
-  padding: 40px 20px;
+  padding: 42px 20px 0 20px;
   margin: 0 auto;
 }
 
 .page-footer__contacts {
   position: relative;
 }
-/*  ??? добавляет пространство справа
+
 .page-footer__contacts::before {
   position: absolute;
   content: "";
-  bottom: -33px;
+  bottom: -91px;
   left: 50%;
-  width: 100%;
+  width: 50%;
   height: 66px;
   background-image: linear-gradient(to left top, transparent 50%, $color-white 50%, $color-white 100%);
   z-index: 100;
@@ -27,13 +27,13 @@
 .page-footer__contacts::after {
   position: absolute;
   content: "";
-  bottom: -33px;
+  bottom: -91px;
   right: 50%;
-  width: 100%;
+  width: 50%;
   height: 66px;
   background-image: linear-gradient(to right top, transparent 50%, $color-white 50%, $color-white 100%);
   z-index: 100;
-}*/
+}
 
 .page-footer__social {
   .page-footer__wrapper {

@@ -1,7 +1,7 @@
 .reviews__wrapper {
   position: relative;
   width: 320px;
-  min-height: 360px;
+  min-height: 375px;
   box-sizing: border-box;
   padding: 45px 20px 50px 20px;
   margin: 0 auto;
@@ -11,7 +11,7 @@
   position: absolute;
   display: flex;
   left: calc(50% - 26px);
-  bottom: 50px;
+  bottom: 66px;
   font-size: 0;
 }
 
@@ -45,9 +45,19 @@
   line-height: $body-line-height + 6px;
 }
 
+@keyframes onset {
+from {
+opacity: 0;
+}
+to {
+opacity: 1;
+}
+}
+
 @media (max-width: $mobile-width-only) {
   .reviews__item {
     display: none;
+    animation: onset 0.8s;
   }
 
   .reviews__toggle {
@@ -71,10 +81,12 @@
 
   #review-1:checked ~ .reviews__list .reviews__item:nth-child(1) {
     display: block;
+
   }
 
   #review-2:checked ~ .reviews__list .reviews__item:nth-child(2) {
     display: block;
+
   }
 
   #review-3:checked ~ .reviews__list .reviews__item:last-child {
