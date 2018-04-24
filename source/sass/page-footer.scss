@@ -12,7 +12,7 @@
 .page-footer__contacts {
   position: relative;
 }
-
+/*  ??? добавляет пространство справа
 .page-footer__contacts::before {
   position: absolute;
   content: "";
@@ -33,7 +33,7 @@
   height: 66px;
   background-image: linear-gradient(to right top, transparent 50%, $color-white 50%, $color-white 100%);
   z-index: 100;
-}
+}*/
 
 .page-footer__social {
   .page-footer__wrapper {
