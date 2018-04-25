@@ -21,7 +21,7 @@
 .download__lead {
   display: none;
   font-size: 40px;
-  line-height: 40px;
+  line-height: 1.2;
   font-weight: 300;
   text-align: center;
 }
@@ -71,36 +71,40 @@
 
 @media (min-width: $tablet-width) {
   .download {
-    background-position: bottom right 25%, center;
+    margin-top: -110px;
+    background-position: 170px bottom, center;
     background-size: auto 500px, cover;
   }
   .download__wrapper {
     width: $tablet-width;
     align-items: left;
-    height: 620px;
-    // временно
-    padding: 90px 20px;
+    padding: 193px 20px 108px 20px;
   }
 
   .download__lead {
     display: block;
     box-sizing: border-box;
     width: 300px;
-    padding: 0 50px;
+    margin: 0;
+    padding: 30px 50px;
   }
 
   .download__button {
     width: 300px;
+    margin-bottom: 45px;
   }
 
   .download__list {
     box-sizing: border-box;
     width: 300px;
-    padding: 0 40px;
+    padding: 0 45px;
+    margin-bottom: 30px;
   }
 
   .download__info {
     width: 300px;
+    font-size: 18px;
+    line-height: $body-line-height;
   }
 }
 
