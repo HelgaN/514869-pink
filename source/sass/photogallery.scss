@@ -1,13 +1,16 @@
 .photogallery__panorama {
   position: relative;
-  background-color: $color-lightgrey;
+  margin-bottom: 20px;
   &::before {
     position: absolute;
     content: "Панорама дня";
+    box-sizing: border-box;
+    padding: 5px;
     width: 140px;
     height: 36px;
     top: 0;
     left: 160px;
+    text-align: center;
     color: $color-white;
     font-size: 12px;
     line-height: $body-line-height;
@@ -21,42 +24,23 @@
   width: 100%;
 }
 
-@media (min-width: $tablet-width) {
-  .photogallery__panorama::before {
-    left: 500px;
-  }
-}
-
 .photogallery__panorama-wrapper {
-  width: 320px;
+  width: 280px;
   box-sizing: border-box;
-  padding: 0 20px;
   margin: 0 auto;
+  padding: 12px 4px;
+  background-color: $color-lightgrey;
+
   .photogallery__panorama-blockquote {
     margin: 0 15px;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .photogallery__panorama-wrapper {
-    width: $tablet-width;
-    background-color: $color-lightgrey;
-  }
-  .photogallery__panorama {
-    background-color: #ffffff;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .photogallery__panorama-wrapper {
-    width: $desktop-width;
-    padding: 0 130px;
   }
 }
 
 .photogallery__panorama-author {
   margin: 0 15px;
   font-weight: 700;
+  font-style: normal;
+
   .photogallery__panorama-time {
     font-size: 12px;
     font-weight: 300;
@@ -67,19 +51,20 @@
 
 .photogallery__panorama-likes {
   position: relative;
-  margin-left: 50px;
+  margin: 8px 45px;
   color: $color-pink;
   font-size: 12px;
   line-height: 24px;
   font-weight: 400;
   text-transform: uppercase;
+
   &::before {
     position: absolute;
     content: "";
     width: 13px;
     height: 12px;
-    top: 5px;
-    left: -35px;
+    top: 6px;
+    left: -30px;
     background-image: url("../img/icon-heart.svg");
   }
 }
@@ -91,19 +76,6 @@
   margin: 0 auto;
 }
 
-@media (min-width: $tablet-width) {
-  .photogallery__wrapper {
-    width: $tablet-width;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .photogallery__wrapper {
-    width: $desktop-width;
-    padding: 0 130px;
-  }
-}
-
 .photogallery__list {
   display: flex;
   flex-direction: column;
@@ -113,30 +85,16 @@
 .photogallery__item {
   display: flex;
   flex-direction: column;
+  margin-bottom: 20px;
   background-color: $color-lightgrey;
 }
 
-@media (min-width: $tablet-width) {
-  .photogallery__list {
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  .photogallery__item {
-  width: 300px;
-  padding: 0;
-  }
+.photogallery__photo {
+  margin-bottom: 12px;
 }
 
 .photogallery__author {
-  padding: 0 15px;
-  font-weight: 700;
-  .photogallery__time {
-    font-size: 12px;
-    font-weight: 300;
-    text-transform: uppercase;
-    font-style: normal;
-  }
+  font-style: normal;
 }
 
 .photogallery__blockquote {
@@ -145,12 +103,13 @@
 
 .photogallery__likes {
   position: relative;
-  margin-left: 50px;
+  margin: 8px 45px 20px 45px;
   color: $color-pink;
   font-size: 12px;
   line-height: 24px;
   font-weight: 400;
   text-transform: uppercase;
+
   &::before {
     position: absolute;
     content: "";
@@ -159,5 +118,60 @@
     top: 5px;
     left: -30px;
     background-image: url("../img/icon-heart.svg");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .photogallery__panorama-wrapper {
+    width: $tablet-width;
+    background-color: $color-lightgrey;
+  }
+
+  .photogallery__panorama {
+    background-color: #ffffff;
+  }
+
+  .photogallery__panorama::before {
+    left: 500px;
+  }
+
+  .photogallery__wrapper {
+    width: $tablet-width;
+  }
+
+  .photogallery__list {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .photogallery__item {
+    width: 300px;
+    padding: 0;
+  }
+}
+
+.photogallery__author {
+  padding: 0 15px;
+  font-weight: 700;
+
+  .photogallery__time {
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-style: normal;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .photogallery__panorama-wrapper {
+    width: $desktop-width;
+    padding: 0 130px;
+  }
+
+  .photogallery__wrapper {
+    width: $desktop-width;
+    padding: 0 130px;
   }
 }
