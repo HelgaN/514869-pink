@@ -30,3 +30,9 @@
     fill: #bec2c7;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .copyright__text {
+    font-size: 18px;
+  }
+}

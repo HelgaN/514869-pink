@@ -116,15 +116,17 @@
   .download__wrapper {
     width: $desktop-width;
     align-items: left;
-    height: 620px;
-    // временно
-    padding: 90px 130px;
+    padding: 195px 130px 120px 130px;
   }
   .download__lead {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
+    padding: 30px;
+    font-size: 50px;
   }
   .download__button {
-    margin-bottom: 50px;
+    margin-bottom: 70px;
+    padding: 15px;
+    font-size: 21px;
   }
   .download__list {
     margin-bottom: 50px;

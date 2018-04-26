@@ -311,6 +311,51 @@
   }
   .tariffs__wrapper {
     width: $desktop-width;
-    padding: 0 130px;
+    padding: 100px 130px 95px 130px;
+  }
+  .tariff__hidden {
+    width: 235px;
+    padding: 14px 15px;
+    font-size: 18px;
+    line-height: $body-line-height + 6px;
+  }
+  .tariff__comments,
+  .tariff__filter,
+  .tariff__smile,
+  .tariff__title {
+    width: 235px;
+  }
+  .tariff__title {
+    padding: 20px;
+  }
+  .tariff__name {
+    font-size: 18px;
+  }
+  .tariff__price {
+    font-size: 24px;
+  }
+  .tariff__comments--on,
+  .tariff__filter--on,
+  .tariff__smile--on {
+    &::before {
+      top: 20px;
+      left: 100px;
+    }
+  }
+  .tariff__comments--off,
+  .tariff__filter--off,
+  .tariff__smile--off {
+    &::after {
+      top: 20px;
+      left: 100px;
+    }
+  }
+  .tariff__title--hit {
+    background-size: 35%;
+    background-position: left top;
+    &::before {
+      top: 15px;
+      left: 15px;
+    }
   }
 }

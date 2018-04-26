@@ -46,6 +46,7 @@ body {
   font-size: $body-font-size;
   font-weight: $body-font-weight;
   line-height: $body-line-height;
+  min-height: 100vh;
 }
 
 img {
