@@ -67,16 +67,22 @@
 .advantages__effect {
   display: none;
   background-color: $color-white;
+  width: $tablet-width;
+  box-sizing: border-box;
+  padding: 97px 20px 57px 20px;
+  margin: 0 auto;
 }
 
 .advantages__effect-title {
+  margin: 0;
   font-size: 30px;
-  line-height: 30px;
+  line-height: 36px;
   font-weight: 700;
 }
 
 .advantages__effect-info {
-  line-height: $body-line-height + 6px;
+  line-height: $body-line-height;
+  margin: 0;
 }
 
 .advantages__effect-link {
@@ -133,24 +139,27 @@
   .advantages__effect {
     display: flex;
     flex-direction: column;
-    margin-bottom: 60px;
     background-image: url("../img/timer.png");
-    background-position: 20px bottom;
+    background-position: 20px 62%;
     background-repeat: no-repeat;
   }
   .advantages__effect-title {
     width: 320px;
     box-sizing: border-box;
     margin-left: auto;
-    padding-right: 140px;
+    padding: 0 10px;
   }
   .advantages__effect-info {
     width: 320px;
+    box-sizing: border-box;
     margin-left: auto;
+    padding: 9px 10px;
   }
   .advantages__effect-link {
     width: 320px;
+    box-sizing: border-box;
     margin-left: auto;
+    padding: 0 10px;
   }
 }
 

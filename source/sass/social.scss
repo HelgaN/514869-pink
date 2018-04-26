@@ -38,3 +38,9 @@
     border-color: rgba($color-blue, 0.4);
   }
 }
+
+@media (min-width: $tablet-width) {
+  .social__list {
+    padding-top: 5px;
+  }
+}
