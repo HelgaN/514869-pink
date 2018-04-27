@@ -198,35 +198,69 @@
     font-weight: 700;
   }
 
-    .photogallery__time {
-      font-size: 12px;
-      font-weight: 300;
-      text-transform: uppercase;
-      font-style: normal;
-    }
+  .photogallery__time {
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-style: normal;
+  }
 
-    .photogallery__blockquote {
-      padding: 0 27px;
-      margin-bottom: 12px;
-    }
+  .photogallery__blockquote {
+    padding: 0 27px;
+    margin-bottom: 12px;
+  }
 
-    .photogallery__likes {
-      padding: 0px 27px 20px 27px;
-      margin-top: auto;
-      &::before {
-        top: 5px;
-        left: 255px;
-      }
+  .photogallery__likes {
+    padding: 0 27px 20px;
+    margin-top: auto;
+
+    &::before {
+      top: 5px;
+      left: 255px;
     }
+  }
 }
 @media (min-width: $desktop-width) {
+  .photogallery {
+    margin-bottom: 8px;
+  }
+
+  .photogallery__panorama {
+    margin-bottom: 55px;
+    background-color: $color-white;
+
+    img {
+      height: 507px;
+    }
+
+    &::before {
+      left: 930px;
+    }
+  }
+
   .photogallery__panorama-wrapper {
-    width: $desktop-width;
-    padding: 0 130px;
+    width: 940px;
+    box-sizing: border-box;
+    margin: 0 130px;
+    padding: 18px 10px;
+  }
+
+  .photogallery__panorama-likes {
+    padding-right: 53px;
   }
 
   .photogallery__wrapper {
     width: $desktop-width;
     padding: 0 130px;
+    margin: 0;
+  }
+
+  .photogallery__item {
+    min-height: 552px;
+    margin-bottom: 55px;
+  }
+
+  .photogallery__photo {
+    height: 400px;
   }
 }

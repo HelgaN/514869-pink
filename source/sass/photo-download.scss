@@ -145,7 +145,6 @@
 .photo-download__range-controls--3 {
   display: none;
 }
-
 @media (min-width: $tablet-width) {
   .photo-download__range-controls--2,
   .photo-download__range-controls--3 {
@@ -162,6 +161,11 @@
 
   .photo-download__user-section {
     padding-top: 35px;
+  }
+
+  .photo-download__user-section .photo-download__wrapper {
+    display: flex;
+    justify-content: space-between;
   }
 
   .photo-download__wrapper {
@@ -201,12 +205,15 @@
 
   .photo-download__range-toggle {
     top: 13px;
+
     &--1 {
       left: 165px;
     }
+
     &--2 {
       left: 45px;
     }
+
     &--3 {
       left: 115px;
     }
@@ -221,8 +228,8 @@
   }
 
   .photo-download__editing-item {
-    margin: 0;
-    margin-bottom: 50px;
+    margin: 0 0 50px;
+
     &--cut {
       width: 22px;
       height: 22px;
@@ -237,18 +244,20 @@
       width: 16px;
       height: 16px;
     }
+
     &:last-child {
       margin-bottom: 0;
     }
   }
+
   .photo-download__button--post {
     width: 260px;
-    padding: 15px 15px;
+    padding: 15px;
   }
 
   .photo-download__button--cancel {
     width: 260px;
-    padding: 15px 15px;
+    padding: 15px;
     margin-bottom: 10px;
   }
 }
@@ -258,17 +267,67 @@
     padding: 0 130px;
   }
 
+  .photo-download__paragraph {
+    &:last-child {
+      margin-bottom: 30px;
+    }
+  }
+
   .photo-download__user-section {
     background-color: $color-white;
   }
 
   .photo-download__user-section .photo-download__wrapper {
+    width: 940px;
+    padding: 55px 60px 55px 80px;
     background-color: $color-lightgrey;
   }
-}
-@media (min-width: $tablet-width) {
-  .photo-download__user-section .photo-download__wrapper {
-    display: flex;
-    justify-content: space-between;
+
+  .photo-download__container {
+    width: 410px;
+  }
+
+  .photo-download__photo {
+    margin-bottom: 0;
+  }
+
+  .photo-download__range-controls--wrapper {
+    width: 270px;
+    padding-right: 50px;
+  }
+
+  .photo-download__range-controls {
+    padding: 0;
+  }
+
+  .photo-download__range-toggle {
+    top: 13px;
+
+    &--1 {
+      left: 70px;
+    }
+
+    &--2 {
+      left: 250px;
+    }
+
+    &--3 {
+      left: 160px;
+    }
+  }
+
+  .photo-download__scale {
+    width: 290px;
+  }
+
+  .photo-download__editing-list {
+    margin-left: 10px;
+  }
+
+  .photo-download__button {
+    width: 180px;
+    margin-top: 160px;
+  }
+  .photo-download__button--post {
   }
 }
