@@ -17,7 +17,7 @@
 
 .photo-download__user-section {
   background-color: $color-lightgrey;
-  padding-bottom: 40px;
+  padding-bottom: 35px;
 }
 
 .photo-download__photo {
@@ -180,14 +180,12 @@
     justify-content: space-between;
     align-items: baseline;
     flex-wrap: wrap;
-    outline: 2px solid green;
   }
 
   .photo-download__range-controls--wrapper {
     width: 240px;
     display: flex;
     flex-direction: column;
-    outline: 2px solid red;
   }
 
   .photo-download__scale {
@@ -217,13 +215,14 @@
   .photo-download__editing-list {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-
-    outline: 2px solid blue;
+    align-self: flex-start;
+    padding: 10px 0;
+    margin-bottom: 0;
   }
 
   .photo-download__editing-item {
     margin: 0;
+    margin-bottom: 50px;
     &--cut {
       width: 22px;
       height: 22px;
@@ -238,16 +237,19 @@
       width: 16px;
       height: 16px;
     }
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
   .photo-download__button--post {
     width: 260px;
     padding: 15px 15px;
-    margin-bottom: 10px;
   }
 
   .photo-download__button--cancel {
     width: 260px;
     padding: 15px 15px;
+    margin-bottom: 10px;
   }
 }
 @media (min-width: $desktop-width) {
