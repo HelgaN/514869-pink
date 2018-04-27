@@ -2,10 +2,14 @@
   display: flex;
   justify-content: center;
   @include list-reset;
+  margin-bottom: 33px;
 }
 
 .social__item {
-  margin-right: 15px;
+  margin-right: 10px;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .social__link {

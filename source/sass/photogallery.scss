@@ -1,3 +1,7 @@
+.photogallery {
+  margin-bottom: 20px;
+}
+
 .photogallery__panorama {
   position: relative;
   margin-bottom: 20px;
@@ -83,6 +87,7 @@
 }
 
 .photogallery__item {
+  width: 280px;
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
@@ -98,25 +103,26 @@
 }
 
 .photogallery__blockquote {
-  margin: 0 15px;
+  margin: 0;
+  padding: 0 15px;
 }
 
 .photogallery__likes {
   position: relative;
-  margin: 8px 45px 20px 45px;
+  margin: 0;
+  padding: 8px 15px 21px 50px;
   color: $color-pink;
   font-size: 12px;
   line-height: 24px;
   font-weight: 400;
   text-transform: uppercase;
-
   &::before {
     position: absolute;
     content: "";
     width: 13px;
     height: 12px;
-    top: 5px;
-    left: -30px;
+    top: 14px;
+    left: 17px;
     background-image: url("../img/icon-heart.svg");
   }
 }
