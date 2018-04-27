@@ -5,6 +5,7 @@
 .photogallery__panorama {
   position: relative;
   margin-bottom: 20px;
+
   &::before {
     position: absolute;
     content: "Панорама дня";
@@ -116,6 +117,7 @@
   line-height: 24px;
   font-weight: 400;
   text-transform: uppercase;
+
   &::before {
     position: absolute;
     content: "";
@@ -126,19 +128,46 @@
     background-image: url("../img/icon-heart.svg");
   }
 }
-
 @media (min-width: $tablet-width) {
-  .photogallery__panorama-wrapper {
-    width: $tablet-width;
-    background-color: $color-lightgrey;
-  }
-
   .photogallery__panorama {
     background-color: #ffffff;
+
+    img {
+      height: 510px;
+    }
   }
 
   .photogallery__panorama::before {
+    top: 55px;
     left: 500px;
+  }
+
+  .photogallery__panorama-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: $tablet-width;
+    padding: 15px 35px;
+    margin-bottom: 60px;
+    background-color: $color-lightgrey;
+  }
+
+  .photogallery__panorama-author {
+    order: 1;
+  }
+
+  .photogallery__panorama-likes {
+    order: 2;
+    margin: 0;
+    padding-right: 45px;
+
+    &::before {
+      left: 105px;
+    }
+  }
+
+  .photogallery__panorama-blockquote {
+    order: 3;
   }
 
   .photogallery__wrapper {
@@ -153,23 +182,43 @@
 
   .photogallery__item {
     width: 300px;
+    min-height: 455px;
     padding: 0;
+    margin-bottom: 20px;
   }
-}
 
-.photogallery__author {
-  padding: 0 15px;
-  font-weight: 700;
-
-  .photogallery__time {
-    font-size: 12px;
-    font-weight: 300;
-    text-transform: uppercase;
-    font-style: normal;
+  .photogallery__photo {
+    /*!!!! */
+    width: 300px;
+    height: 300px;
   }
+
+  .photogallery__author {
+    padding: 5px 27px 0;
+    font-weight: 700;
+  }
+
+    .photogallery__time {
+      font-size: 12px;
+      font-weight: 300;
+      text-transform: uppercase;
+      font-style: normal;
+    }
+
+    .photogallery__blockquote {
+      padding: 0 27px;
+      margin-bottom: 12px;
+    }
+
+    .photogallery__likes {
+      padding: 0px 27px 20px 27px;
+      margin-top: auto;
+      &::before {
+        top: 5px;
+        left: 255px;
+      }
+    }
 }
-
-
 @media (min-width: $desktop-width) {
   .photogallery__panorama-wrapper {
     width: $desktop-width;

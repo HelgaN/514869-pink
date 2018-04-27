@@ -21,32 +21,33 @@
   background-position: top left;
 }
 
-.page-inner__paragraph-wrapper {
+.page-inner__paragraph {
   width: 320px;
   box-sizing: border-box;
   padding: 45px 20px 48px 20px;
   margin: 0 auto;
+  text-align: center;
   line-height: $body-line-height + 6px;
 }
 
-.page-inner__paragraph {
-  margin: 0;
-  text-align: center;
-}
-
 @media (min-width: $tablet-width) {
+  .page-inner {
+    margin-top: -90px;
+  }
   .page-inner__title {
+    padding-top: 180px;
     padding-left: 150px;
     padding-right: 150px;
-    padding-bottom: 130px;
+    padding-bottom: 138px;
     font-size: 50px;
-    line-height: 50px;
+    line-height: 1.2;
   }
-}
 
-@media (min-width: $tablet-width) {
-  .page-inner__paragraph-wrapper {
-    width: $tablet-width;
+  .page-inner__paragraph {
+    width: 500px;
+    padding: 90px 20px 78px 20px;
+    font-size: 18px;
+    line-height: 30px;
   }
 }
 
