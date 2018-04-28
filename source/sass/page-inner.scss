@@ -5,13 +5,17 @@
 .page-inner__title {
   display: block;
   box-sizing: border-box;
-  padding: 100px 20px 90px;
+  padding: 98px 20px 82px;
   margin: 0 auto;
   color: $color-white;
   font-size: 24px;
-  line-height: $body-line-height;
+  line-height: 1.2;
   font-weight: 300;
   text-align: center;
+}
+
+.page-inner__title-contest {
+  padding-bottom: 55px;
 }
 
 .page-inner__paragraph-wrapper--bg {
@@ -28,6 +32,11 @@
   margin: 0 auto;
   text-align: center;
   line-height: $body-line-height + 6px;
+}
+
+.page-inner__paragraph--contest {
+  padding-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 @media (min-width: $tablet-width) {
