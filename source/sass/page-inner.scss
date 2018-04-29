@@ -18,6 +18,10 @@
   padding-bottom: 55px;
 }
 
+.page-inner__paragraph-wrapper {
+  margin: 0 auto;
+}
+
 .page-inner__paragraph-wrapper--bg {
   background-color: $color-blue;
   background-image: url("../img/bg-back-mobile@1x.jpg");
@@ -34,9 +38,13 @@
   line-height: $body-line-height + 6px;
 }
 
-.page-inner__paragraph--contest {
+.page-inner__paragraph-contest {
   padding-bottom: 25px;
   margin-bottom: 15px;
+}
+
+.page-inner__paragraph-contest--hidden {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -57,6 +65,22 @@
     padding: 90px 20px 78px 20px;
     font-size: 18px;
     line-height: 30px;
+  }
+
+  .page-inner__title-contest {
+    padding-top: 180px;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-bottom: 77px;
+  }
+
+  .page-inner__paragraph-contest {
+    padding: 92px 0 78px 0;
+  }
+  .page-inner__paragraph-contest--hidden {
+    display: block;
+    padding: 0 60px 70px 60px;
+    margin-top: -90px;
   }
 }
 

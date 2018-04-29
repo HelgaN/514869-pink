@@ -1,12 +1,16 @@
 .modal {
   position: absolute;
-  display: none;
+  margin: auto;
+  left: 0;
+  right: 0;
+  display: block;
   width: 320px;
   box-sizing: border-box;
   padding-top: 40px;
   margin: 0 auto;
   background-color: $color-white;
   box-shadow: 0 8px 15px 0 rgba(0,0,0,0.15);
+  z-index: 100;
 }
 
 .modal__title {
@@ -55,9 +59,34 @@
 @media (min-width: $tablet-width) {
   .modal {
   width: 460px;
+  padding-top: 65px;
+  }
+  .modal__title {
+    width: 230px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .modal__paragraph {
+    white-space: normal;
+    padding-left: 67px;
+    padding-right: 67px;
+    font-size: 18px;
+    line-height: 24px;
   }
   .modal__button {
     width: 300px;
+  }
+  .modal-error {
+    top: 880px;
+    .modal__paragraph {
+      padding-left: 67px;
+      padding-right: 67px;
+    }
+  }
+  .modal-sent {
+    top: 1355px;
   }
 }
 

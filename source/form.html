@@ -61,7 +61,8 @@
       <h1 class="page-inner__title page-inner__title-contest">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </div>
     <div class="page-inner__paragraph-wrapper">
-      <p class="page-inner__paragraph page-inner__paragraph--contest">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+      <p class="page-inner__paragraph page-inner__paragraph-contest">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+      <p class="page-inner__paragraph page-inner__paragraph-contest--hidden">Пожалуйста, заполните форму ниже:</p>
     </div>
 
     <form class="form" action="https://echo.htmlacademy.ru" method="post">
@@ -84,7 +85,7 @@
         </div>
       </fieldset>
 
-      <fieldset class="form__fieldset form__fieldset--gray">
+      <fieldset class="form__fieldset form__fieldset--gray form__fieldset--progress">
         <div class="form__wrapper">
           <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
           <ul class="progress__list">
@@ -118,12 +119,12 @@
 
       <fieldset class="form__fieldset form__fieldset--contacts">
         <div class="form__wrapper">
-          <legend class="visually-hidden">Контактная информация</legend>
-          <p>
+          <legend class="form__legend">Контактная информация</legend>
+          <p class="form__wrapper--contacts">
             <label class="form__label" for="phone">Номер телефона</label>
             <input class="form__input" id="phone" type="tel" name="phone-number" placeholder="Номер, пожалуйста">
           </p>
-          <p>
+          <p class="form__wrapper--contacts">
             <label class="form__label" for="user-email">Адрес почты</label>
             <input class="form__input" id="user-email" type="email" name="patronymic" placeholder="Введите почту *">
           </p>
@@ -158,10 +159,8 @@
       </fieldset>
 
       <div class="form__wrapper--row">
-        <div class="form__wrapper">
-          <button class="form__button" type="submit">Отправить форму</button>
-          <p class="form__required-info"><span class="form__required-info--pink">*</span> — обязательные поля</p>
-        </div>
+        <button class="form__button" type="submit">Отправить форму</button>
+        <p class="form__required-info"><span class="form__required-info--pink">*</span> — обязательные поля</p>
       </div>
     </form>
 
