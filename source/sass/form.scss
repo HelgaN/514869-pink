@@ -3,20 +3,36 @@
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+/*  padding: 0 20px;*/
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.form__wrapper {
+  width: 320px;
+  box-sizing: border-box;
   padding: 0 20px;
   margin: 0 auto;
+  p {
+    margin: 0;
+  }
 }
 
 .form__wrapper--col {
   display: flex;
   flex-direction: column;
+  margin: 0;
 }
 
-@media (min-width: $tablet-width) {
-  .form__wrapper--col {
-  flex-direction: row;
-  align-items: center;
-  }
+.form__fieldset {
+  border: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.form__legend {
+  padding: 40px 30px;
+  text-align: center;
 }
 
 .form__label,
@@ -28,23 +44,16 @@
 }
 
 .form__label {
+  display: inline-block;
   padding-left: 20px;
-}
-
-.form__legend {
-  margin-bottom: 45px;
-  text-align: center;
-}
-
-.form__fieldset {
-  border: none;
-  padding: 0;
+  margin-bottom: 10px;
 }
 
 .form__input {
   width: 100%;
   box-sizing: border-box;
   padding: 15px;
+  margin-bottom: 20px;
   font-size: 18px;
   line-height: 30px;
   border: 2px solid #e5e5e5;
@@ -63,25 +72,32 @@
 }
 
 .form__fieldset--gray {
+  margin-bottom: 35px;
   background-color: $color-lightgrey;
 }
 
 .progress__list {
   @include list-reset;
+ }
+
+.progress__item:last-child {
+  .form__label--checkbox {
+    margin-bottom: 45px;
+  }
 }
 
 .form__label--checkbox {
   position: relative;
   display: block;
-  margin-left: 70px;
-  margin-bottom: 40px;
+  margin-left: 67px;
+  margin-bottom: 52px;
   font-size: 18px;
   line-height: 30px;
   &::before {
     position: absolute;
     content: "";
     top: -5px;
-    left: -50px;
+    left: -70px;
     width: 35px;
     height: 35px;
     background-color: $color-white;
@@ -93,12 +109,24 @@
   position: absolute;
   content: "";
   top: 5px;
-  left: -45px;
-  width: 25px;
+  left: -60px;
+  width: 20px;
   height: 10px;
   border-bottom: 2px solid $color-pink;
   border-left: 2px solid $color-pink;
   transform: rotate(-45deg);
+}
+
+.form__fieldset--contacts .form__legend {
+  display: none;
+}
+.form__fieldset--apps {
+  margin-bottom: 0;
+}
+
+.form__fieldset--apps .form__legend {
+  padding-top: 37px;
+  padding-bottom: 37px;
 }
 
 .apps__list {
@@ -109,14 +137,14 @@
   position: relative;
   display: block;
   margin-left: 70px;
-  margin-bottom: 40px;
+  margin-bottom: 45px;
   font-size: 18px;
   line-height: 30px;
   &::before {
     position: absolute;
     content: "";
     top: -5px;
-    left: -50px;
+    left: -73px;
     width: 35px;
     height: 35px;
     background-color: $color-white;
@@ -129,18 +157,23 @@
   position: absolute;
   content: "";
   top: 7px;
-  left: -38px;
+  left: -61px;
   width: 15px;
   height: 15px;
   background-color: $color-pink;
   border-radius: 50%;
 }
 
+.form__fieldset--textarea .form__legend {
+  padding-bottom: 15px;
+}
+
 .form__textarea {
-  width: 100%;
+  width: 280px;
+  min-height: 200px;
   box-sizing: border-box;
   padding: 15px 20px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   font-size: 18px;
   line-height: 30px;
   border: 2px solid #e5e5e5;
@@ -161,15 +194,22 @@
   }
 }
 
+.form__wrapper--row {
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
 .form__button {
   @include button-green;
   width: 100%;
+  margin-bottom: 35px;
 }
 
 .form__required-info {
-  font-size: 18px;
+  font-size: $body-font-size;
   line-height: 30px;
   font-weight: 400;
+  text-transform: uppercase;
   text-align: center;
   &--pink {
     color: $color-pink;
@@ -179,7 +219,24 @@
 @media (min-width: $tablet-width) {
   .form {
     width: $tablet-width;
+    padding: 0 20px;
   }
+  .form__wrapper {
+    width: 616px;
+    margin: 0;
+  }
+  .form__wrapper--col {
+  flex-direction: row;
+  align-items: baseline;
+  }
+  .form__label {
+    padding: 0;
+    margin-right: 17px;
+  }
+  .form__input {
+    margin-bottom: 50px;
+  }
+
   .form__fieldset:first-child {
     order: 0;
   }
@@ -195,18 +252,128 @@
   .form__fieldset:nth-child(5) {
     order: 4;
   }
+  .form__fieldset {
+    position: relative;
+    box-sizing: border-box;
+    margin-bottom: 65px;
+  }
+
+  .form__fieldset:not(:first-child) {
+    border: 2px solid #e5e5e5;
+  }
+
+  .form__fieldset--name {
+    margin-bottom: 17px;
+    .form__wrapper {
+      padding: 0;
+    }
+  }
+
+  .form__fieldset--gray {
+    background-color: $color-white;
+  }
+
   .form__wrapper--row {
     display: flex;
     justify-content: space-between;
     order: 5;
   }
+  .form__fieldset--apps {
+    padding-top: 55px;
+    padding-bottom: 15px;
+  }
+  .form__fieldset--apps .form__legend {
+    @include form-legend;
+    top: -12px;
+    left: 125px;
+  }
+  .apps__list {
+    margin-left: 27px;
+  }
+  .form__label--radio::before {
+    left: -60px;
+  }
+  .form__input--radio:checked + .form__label--radio::after {
+    left: -47px;
+  }
+  .form__fieldset--contacts {
+    padding-top: 45px;
+    .form__input {
+      width: 500px;
+      margin-bottom: 15px;
+    }
+    .form__label {
+      margin-bottom: 32px;
+    }
+    .form__legend {
+      @include form-legend;
+      top: -41px;
+      left: 188px;
+    }
+  }
+  .form__fieldset--contacts .form__legend {
+    display: block;
+    margin-top: 30px;
+  }
+  .form__wrapper--contacts {
+    display: flex;
+    flex-direction: column;
+    padding: 0 38px;
+    .form__label {
+      order: 1;
+      margin-left: 15px;
+    }
+  }
+
+  .form__fieldset--progress {
+    padding-top: 55px;
+    .form__legend {
+      @include form-legend;
+      top: -10px;
+      left: 100px;
+    }
+    .form__label--checkbox::before {
+      left: -60px;
+    }
+    .form__input--checkbox:checked + .form__label--checkbox::after {
+      left: -50px;
+    }
+  }
+
+  .progress__list {
+    margin-left: 30px;
+    margin-bottom: 53px;
+  }
+
+  .form__fieldset--textarea {
+    padding: 45px 0;
+    margin-bottom: 68px;
+    text-align: center;
+    .form__legend {
+      @include form-legend;
+      top: -10px;
+      left: 195px;
+    }
+  }
+  .form__textarea {
+    width: 500px;
+    min-height: 190px;
+    margin-bottom: 0;
+  }
+  .form__wrapper--row {
+    width: 620px;
+    padding: 0;
+    justify-content: space-between;
+  }
   .form__button {
     width: 300px;
     box-sizing: border-box;
+    margin-bottom: 45px;
   }
   .form__required-info {
     width: 300px;
     box-sizing: border-box;
+    text-align: right;
   }
 }
 
@@ -217,6 +384,9 @@
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 0 130px;
+  }
+  .form__wrapper {
+    width: auto;
   }
   .form__wrapper--col {
     flex-direction: row;
@@ -231,13 +401,66 @@
   }
   .form__fieldset--name,
   .form__fieldset--apps {
-    width: 450px;
+    width: 430px;
   }
-  .form__fieldset--contacts,
+  .form__fieldset--name {
+    padding-top: 5px;
+  }
+  .form__fieldset--apps {
+    .form__legend {
+      left: 35px;
+    }
+    .apps__list {
+      margin-left: 40px;
+    }
+  }
+  .form__fieldset--contacts {
+    .form__wrapper {
+      width: 936px;
+      display: flex;
+    }
+    .form__legend {
+      left: 350px;
+    }
+  }
+  .form__wrapper--contacts {
+    width: 410px;
+    .form__input {
+      width: 372px;
+    }
+    .form__label {
+      margin-bottom: 13px;
+    }
+  }
+  .form__fieldset--progress {
+    .form__legend {
+      left: 260px;
+    }
+    .form__wrapper {
+      padding: 0;
+      }
+    .form__label--checkbox {
+      margin-bottom: 25px;
+    }
+    .progress__list {
+      margin-bottom: 15px;
+    }
+  }
   .form__fieldset--textarea {
     width: 100%;
+    margin-bottom: 60px;
+    .form__legend {
+      left: 350px;
+    }
+    .form__textarea {
+      width: 820px;
+      min-height: 124px;
+    }
   }
   .form__wrapper--row {
     width: 100%;
+    .form__button {
+      margin-bottom: 0;
+    }
   }
 }
