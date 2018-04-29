@@ -219,9 +219,10 @@
 @media (min-width: $tablet-width) {
   .form {
     width: $tablet-width;
+    padding: 0 20px;
   }
   .form__wrapper {
-    width: $tablet-width;
+    width: 616px;
     margin: 0;
   }
   .form__wrapper--col {
@@ -252,7 +253,20 @@
     order: 4;
   }
   .form__fieldset {
-    margin-bottom: 0;
+    position: relative;
+    box-sizing: border-box;
+    margin-bottom: 65px;
+  }
+
+  .form__fieldset:not(:first-child) {
+    border: 2px solid #e5e5e5;
+  }
+
+  .form__fieldset--name {
+    margin-bottom: 17px;
+    .form__wrapper {
+      padding: 0;
+    }
   }
 
   .form__fieldset--gray {
@@ -264,12 +278,17 @@
     justify-content: space-between;
     order: 5;
   }
+  .form__fieldset--apps {
+    padding-top: 55px;
+    padding-bottom: 15px;
+  }
   .form__fieldset--apps .form__legend {
-    padding-top: 6px;
-    padding-bottom: 50px;
+    @include form-legend;
+    top: -12px;
+    left: 125px;
   }
   .apps__list {
-    margin-left: 47px;
+    margin-left: 27px;
   }
   .form__label--radio::before {
     left: -60px;
@@ -278,7 +297,7 @@
     left: -47px;
   }
   .form__fieldset--contacts {
-    padding: 0 60px;
+    padding-top: 45px;
     .form__input {
       width: 500px;
       margin-bottom: 15px;
@@ -287,11 +306,9 @@
       margin-bottom: 32px;
     }
     .form__legend {
-      display: flex;
-      flex-direction: column;
-      padding-left: 150px;
-      padding-bottom: 35px;
-      text-align: left;
+      @include form-legend;
+      top: -41px;
+      left: 188px;
     }
   }
   .form__fieldset--contacts .form__legend {
@@ -301,6 +318,7 @@
   .form__wrapper--contacts {
     display: flex;
     flex-direction: column;
+    padding: 0 38px;
     .form__label {
       order: 1;
       margin-left: 15px;
@@ -308,12 +326,11 @@
   }
 
   .form__fieldset--progress {
-    padding-left: 50px;
-    padding-right: 50px;
-    margin-bottom: 25px;
+    padding-top: 55px;
     .form__legend {
-      padding: 60px 60px 45px;
-      text-align: left;
+      @include form-legend;
+      top: -10px;
+      left: 100px;
     }
     .form__label--checkbox::before {
       left: -60px;
@@ -323,20 +340,25 @@
     }
   }
 
+  .progress__list {
+    margin-left: 30px;
+    margin-bottom: 53px;
+  }
+
   .form__fieldset--textarea {
-    padding-left: 60px;
-    padding-right: 60px;
-    margin-bottom: 65px;
+    padding: 45px 0;
+    margin-bottom: 68px;
+    text-align: center;
     .form__legend {
-      padding-left: 155px;
-      margin-bottom: 20px;
-      text-align: left;
+      @include form-legend;
+      top: -10px;
+      left: 195px;
     }
   }
   .form__textarea {
     width: 500px;
-    min-height: 195px;
-    margin-bottom: 50px;
+    min-height: 190px;
+    margin-bottom: 0;
   }
   .form__wrapper--row {
     width: 620px;
@@ -346,7 +368,7 @@
   .form__button {
     width: 300px;
     box-sizing: border-box;
-    margin-bottom: 40px;
+    margin-bottom: 45px;
   }
   .form__required-info {
     width: 300px;
@@ -363,6 +385,9 @@
     flex-wrap: wrap;
     padding: 0 130px;
   }
+  .form__wrapper {
+    width: auto;
+  }
   .form__wrapper--col {
     flex-direction: row;
   }
@@ -376,13 +401,66 @@
   }
   .form__fieldset--name,
   .form__fieldset--apps {
-    width: 450px;
+    width: 430px;
   }
-  .form__fieldset--contacts,
+  .form__fieldset--name {
+    padding-top: 5px;
+  }
+  .form__fieldset--apps {
+    .form__legend {
+      left: 35px;
+    }
+    .apps__list {
+      margin-left: 40px;
+    }
+  }
+  .form__fieldset--contacts {
+    .form__wrapper {
+      width: 936px;
+      display: flex;
+    }
+    .form__legend {
+      left: 350px;
+    }
+  }
+  .form__wrapper--contacts {
+    width: 410px;
+    .form__input {
+      width: 372px;
+    }
+    .form__label {
+      margin-bottom: 13px;
+    }
+  }
+  .form__fieldset--progress {
+    .form__legend {
+      left: 260px;
+    }
+    .form__wrapper {
+      padding: 0;
+      }
+    .form__label--checkbox {
+      margin-bottom: 25px;
+    }
+    .progress__list {
+      margin-bottom: 15px;
+    }
+  }
   .form__fieldset--textarea {
     width: 100%;
+    margin-bottom: 60px;
+    .form__legend {
+      left: 350px;
+    }
+    .form__textarea {
+      width: 820px;
+      min-height: 124px;
+    }
   }
   .form__wrapper--row {
     width: 100%;
+    .form__button {
+      margin-bottom: 0;
+    }
   }
 }

@@ -62,7 +62,8 @@
 
   .page-inner__paragraph {
     width: 500px;
-    padding: 90px 20px 78px 20px;
+    padding: 92px 0 55px 0;
+    margin-bottom: 17px;
     font-size: 18px;
     line-height: 30px;
   }
@@ -73,15 +74,6 @@
     padding-right: 90px;
     padding-bottom: 77px;
   }
-
-  .page-inner__paragraph-contest {
-    padding: 92px 0 78px 0;
-  }
-  .page-inner__paragraph-contest--hidden {
-    display: block;
-    padding: 0 60px 70px 60px;
-    margin-top: -90px;
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -89,14 +81,14 @@
     margin-top: -130px;
   }
   .page-inner__title {
-    padding: 200px 290px 100px;
+    padding: 200px 100px 100px;
   }
   .page-inner__paragraph-wrapper {
     width: $desktop-width;
+    padding: 95px 0 60px;
   }
   .page-inner__paragraph {
-    width: 640px;
-    padding-top: 95px;
-    padding-bottom: 85px;
+    width: 800px;
+    padding: 0;
   }
 }

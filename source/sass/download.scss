@@ -52,12 +52,12 @@
 }
 
 .download__list {
+  @include list-reset;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   width: 100%;
   box-sizing: border-box;
-  @include list-reset;
   padding: 0 35px;
   margin-bottom: 15px;
 }

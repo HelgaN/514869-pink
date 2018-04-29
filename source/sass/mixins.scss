@@ -14,3 +14,10 @@
   background-color: #2aab6d;
   border: none;
 }
+
+@mixin form-legend {
+  position: absolute;
+  display: block;
+  padding: 0 20px;
+  background-color: $color-white;
+}
