@@ -100,7 +100,13 @@
 }
 
 .photogallery__author {
+  padding: 0 15px;
+  font-weight: 700;
   font-style: normal;
+}
+
+.photogallery__time {
+  font-weight: 400;
 }
 
 .photogallery__blockquote {

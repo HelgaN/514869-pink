@@ -201,6 +201,9 @@
 }
 
 @media (min-width: $tablet-width) {
+  .tariffs {
+    margin-bottom: 13px;
+  }
   .tariffs::before {
     top: -55px;
     height: 55px;
