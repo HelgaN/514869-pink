@@ -9,8 +9,21 @@
   margin: 0 auto;
 }
 
+.page-footer__logo-image--desktop {
+  display: none;
+}
+
 .page-footer__logo-image:hover path {
   fill: $color-pink;
+}
+
+.page-footer__logo-image--desktop:hover {
+  .page-footer__logo-image--desktop-cb {
+    fill: $color-pink;
+  }
+  .page-footer__logo-image--desktop-cp {
+    fill: $color-darkblue;
+  }
 }
 
 .page-footer__logo-image:active {
@@ -19,6 +32,10 @@
   g path {
     fill: $color-darkblue;
   }
+}
+
+.page-footer__logo-image--desktop:active {
+  opacity: 0.3;
 }
 
 .page-footer__contacts {
@@ -125,6 +142,13 @@
 
     iframe {
       height: 500px;
+    }
+
+    .page-footer__logo-image {
+      display: none;
+    }
+    .page-footer__logo-image--desktop {
+      display: block;
     }
   }
 

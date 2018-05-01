@@ -184,6 +184,20 @@ opacity: 1;
     width: $desktop-width;
     padding: 165px 130px 90px 130px;
   }
+
+  .reviews__item {
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      top: -90px;
+      left: calc(50% - 38px);
+      width: 79px;
+      height: 63px;
+      background-image: url("../img/icon-quotes.svg");
+    }
+
+  }
   .reviews__author-name {
     font-size: 24px;
     line-height: 30px;

@@ -247,6 +247,14 @@
   }
   .tariff__title {
     padding: 10px;
+    &--hit {
+      background-image: url("../img/bg-hit-tablet.svg");
+      background-position: left top;
+      &::before {
+        top: 5px;
+        left: 8px;
+      }
+    }
   }
   .tariff__hidden--empty {
     background-color: transparent;
@@ -276,14 +284,7 @@
       left: 64px;
     }
   }
-  .tariff__title--hit {
-    background-size: 40%;
-    background-position: left top;
-    &::before {
-      top: 5px;
-      left: 8px;
-    }
-  }
+
 }
 /*.tariff__toggles {
   display: flex;
@@ -354,11 +355,6 @@
     }
   }
   .tariff__title--hit {
-    background-size: 35%;
     background-position: left top;
-    &::before {
-      top: 15px;
-      left: 15px;
-    }
   }
 }
