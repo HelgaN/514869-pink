@@ -310,6 +310,9 @@
   }
 }*/
 @media (min-width: $desktop-width) {
+  .tariffs {
+    margin-bottom: 30px;
+  }
   .tariffs::before {
     height: 86px;
   }

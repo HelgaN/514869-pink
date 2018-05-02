@@ -45,10 +45,10 @@
 .page-footer__contacts::before {
   position: absolute;
   content: "";
-  bottom: -104px;
+  bottom: -76px;
   left: 50%;
   width: 50%;
-  height: 66px;
+  height: 38px;
   background-image: linear-gradient(to left top, transparent 50%, $color-white 50%, $color-white 100%);
   z-index: 100;
 }
@@ -56,10 +56,10 @@
 .page-footer__contacts::after {
   position: absolute;
   content: "";
-  bottom: -104px;
+  bottom: -76px;
   right: 50%;
   width: 50%;
-  height: 66px;
+  height: 38px;
   background-image: linear-gradient(to right top, transparent 50%, $color-white 50%, $color-white 100%);
   z-index: 100;
 }
@@ -142,6 +142,7 @@
 
     iframe {
       height: 500px;
+      margin-bottom: 45px;
     }
 
     .page-footer__logo-image {

@@ -55,6 +55,9 @@
   &--saturation {
     fill: #b5b9be;
   }
+  &:hover .photo-download__editing-item--fill {
+    fill: #8d949b;
+  }
 }
 
 .photo-download__range-controls {
@@ -81,6 +84,10 @@
   border: 2px solid $color-pink;
   border-radius: 50%;
   cursor: pointer;
+}
+
+.photo-download__range-toggle:active {
+  background-color: $color-pink;
 }
 
 .photo-download__button--post {

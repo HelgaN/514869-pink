@@ -177,20 +177,28 @@
           <label class="reviews__toggle reviews__toggle--3" for="review-3">Третий</label>
         </div>
         <div class="reviews__list">
-          <blockquote class="reviews__item">
+          <blockquote class="reviews__item reviews__item-1">
             <cite class="reviews__author-name">Николай Петров</cite>
             <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             <p class="reviews__author-status">25 лет, водитель трамвая</p>
+            <div class="reviews__item-buttons">
+            <button class="reviews__item-button reviews__item-button-prev reviews__item-button-prev-1" type="button"><span class="visually-hidden">Предыдущий отзыв</span></button>
+            <button class="reviews__item-button reviews__item-button-next reviews__item-button-next-1" type="button"><span class="visually-hidden">Следующий отзыв</span></button>
+          </div>
           </blockquote>
-          <blockquote class="reviews__item">
+          <blockquote class="reviews__item reviews__item-2">
             <cite class="reviews__author-name">Вася Васильев</cite>
             <p class="reviews__text">«Прикольное приложение. Мне понравилось.»</p>
             <p class="reviews__author-status">19 лет, студент</p>
+            <button class="reviews__item-button reviews__item-button-prev reviews__item-button-prev-2" type="button"><span class="visually-hidden">Предыдущий отзыв</span></button>
+            <button class="reviews__item-button reviews__item-button-next reviews__item-button-next-2" type="button"><span class="visually-hidden">Следующий отзыв</span></button>
           </blockquote>
-          <blockquote class="reviews__item">
+          <blockquote class="reviews__item reviews__item-3">
               <cite class="reviews__author-name">Владимир Иванов</cite>
               <p class="reviews__text">«Я в полнейшем восторге! Одно из лучших приложений, которое я скачивал за последние полгода!»</p>
               <p class="reviews__author-status">48 лет, копирайтер</p>
+              <button class="reviews__item-button reviews__item-button-prev reviews__item-button-prev-3" type="button"><span class="visually-hidden">Предыдущий отзыв</span></button>
+              <button class="reviews__item-button reviews__item-button-next reviews__item-button-next-3" type="button"><span class="visually-hidden">Следующий отзыв</span></button>
           </blockquote>
           <!--<button class="reviews__prev" type="button">Предыдущий отзыв</button>
             <button class="reviews__next" type="button">Следующий отзыв</button>-->
@@ -291,11 +299,11 @@
       <ul class="contacts__list">
         <li class="contacts__item">
           <b class="contacts__title">Звоните:</b>
-          <p class="contacts__info">+7 (812) 555-66-66</p>
+          <p class="contacts__info"><a href="#">+7 (812) 555-66-66</a></p>
         </li>
         <li class="contacts__item">
           <b class="contacts__title">Пишите:</b>
-          <p class="contacts__info">mail@htmlacademy.ru</p>
+          <p class="contacts__info"><a href="#">mail@htmlacademy.ru</a></p>
         </li>
         <li class="contacts__item">
           <b class="contacts__title">Приезжайте в гости:</b>
@@ -374,6 +382,8 @@
   </footer>
   <script src="js/menu.js">
 
+  </script>
+  <script src="js/reviews-desktop.js">
   </script>
 
 </body>

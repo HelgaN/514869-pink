@@ -2,8 +2,8 @@
   margin-top: -70px;
   background-color: $color-blue;
   background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
-  background-size: 258px auto, cover;
-  background-position: left 175px, center;
+  background-size: 258px auto, contain;
+  background-position: left 175px, center 10px;
   background-repeat: no-repeat;
 }
 
