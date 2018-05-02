@@ -63,7 +63,8 @@
 .main-navigation__toggle {
   position: absolute;
   top: -47px;
-  right: 20px;
+  /*right: 20px;*/
+  left: 78%;
   z-index: 2;
   display: block;
   width: 50px;
@@ -155,6 +156,10 @@
     left: 0;
     width: 100%;
     margin: 0 auto;
+  }
+
+  .main-navigation__toggle {
+    left: 90%;
   }
 
   .main-navigation--closed .main-navigation__item {
