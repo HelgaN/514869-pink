@@ -9,8 +9,21 @@
   margin: 0 auto;
 }
 
+.page-footer__logo-image--desktop {
+  display: none;
+}
+
 .page-footer__logo-image:hover path {
   fill: $color-pink;
+}
+
+.page-footer__logo-image--desktop:hover {
+  .page-footer__logo-image--desktop-cb {
+    fill: $color-pink;
+  }
+  .page-footer__logo-image--desktop-cp {
+    fill: $color-darkblue;
+  }
 }
 
 .page-footer__logo-image:active {
@@ -21,6 +34,10 @@
   }
 }
 
+.page-footer__logo-image--desktop:active {
+  opacity: 0.3;
+}
+
 .page-footer__contacts {
   position: relative;
 }
@@ -28,10 +45,10 @@
 .page-footer__contacts::before {
   position: absolute;
   content: "";
-  bottom: -104px;
+  bottom: -76px;
   left: 50%;
   width: 50%;
-  height: 66px;
+  height: 38px;
   background-image: linear-gradient(to left top, transparent 50%, $color-white 50%, $color-white 100%);
   z-index: 100;
 }
@@ -39,10 +56,10 @@
 .page-footer__contacts::after {
   position: absolute;
   content: "";
-  bottom: -104px;
+  bottom: -76px;
   right: 50%;
   width: 50%;
-  height: 66px;
+  height: 38px;
   background-image: linear-gradient(to right top, transparent 50%, $color-white 50%, $color-white 100%);
   z-index: 100;
 }
@@ -75,6 +92,7 @@
 @media (min-width: $tablet-width) {
   iframe {
     height: 375px;
+    margin-bottom: 30px;
   }
 
   .page-footer__wrapper {
@@ -124,6 +142,14 @@
 
     iframe {
       height: 500px;
+      margin-bottom: 45px;
+    }
+
+    .page-footer__logo-image {
+      display: none;
+    }
+    .page-footer__logo-image--desktop {
+      display: block;
     }
   }
 

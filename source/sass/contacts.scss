@@ -33,6 +33,18 @@
   line-height: 1.3;
   font-weight: 300;
   text-align: center;
+  a {
+    color: $color-pink;
+    text-decoration: none;
+    &:hover {
+      color: $color-blue;
+      text-decoration: underline;
+    }
+    &:active {
+      color: $color-lightgrey;
+      text-decoration: none;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -72,9 +84,10 @@
     font-size: 50px;
   }
   .contacts__list {
+    width: 940px;
     box-sizing: border-box;
     justify-content: space-around;
-    margin: 55px 0 20px 0;
+    margin: 55px auto 0 auto;
   }
   .contacts__item {
     width: 250px;

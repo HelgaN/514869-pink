@@ -25,8 +25,9 @@
 .page-inner__paragraph-wrapper--bg {
   background-color: $color-blue;
   background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: top left;
+  background-size: cover;
 }
 
 .page-inner__paragraph {
@@ -68,6 +69,10 @@
     line-height: 30px;
   }
 
+  .page-inner__paragraph-wrapper--bg {
+    background-position: center -90px;
+  }
+
   .page-inner__title-contest {
     padding-top: 180px;
     padding-left: 90px;
@@ -87,6 +92,11 @@
     width: $desktop-width;
     padding: 95px 0 60px;
   }
+
+  .page-inner__paragraph-wrapper--bg {
+    background-position: center -590px;
+  }
+
   .page-inner__paragraph {
     width: 800px;
     padding: 0;
