@@ -1,6 +1,6 @@
 .page-header {
   position: relative;
-  background-color: rgba($color-blue, 0.7);
+  background-color: rgba($color-darkblue, 0.8);
   /* фон - картинка нижнего блока */
   transition-duration: 0.6s;
 }
@@ -158,10 +158,6 @@
     margin: 0 auto;
   }
 
-  .main-navigation__toggle {
-    left: 90%;
-  }
-
   .main-navigation--closed .main-navigation__item {
     display: none;
   }
@@ -229,7 +225,15 @@
 @media (min-width: $tablet-width) {
   .page-header__wrapper {
     min-width: $tablet-width;
-    padding: 26px 20px;
+    padding: 26px 20px 45px 20px;
+  }
+
+  .main-navigation {
+    top: 110px;
+    .main-navigation__toggle {
+      top: -66px;
+      left: 89.5%;
+    }
   }
 
   .page-header__logo-image--mobile {
@@ -293,11 +297,20 @@
     margin-left: auto;
     background-color: transparent;
   }
+  .main-navigation__item {
+    padding-bottom: 10px;
+  }
   .main-navigation__link {
+    display: block;
+    min-height: 29px;
     font-size: 18px;
     line-height: 1.2;
     font-weight: 400;
     text-transform: none;
+    border-bottom: 2px solid transparent;
+    &--curent {
+      border-bottom: 2px solid $color-white;
+    }
   }
 
   .main-navigation__toggle {

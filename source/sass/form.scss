@@ -227,6 +227,15 @@
   @include button-green;
   width: 100%;
   margin-bottom: 35px;
+  &:hover {
+    background-color: #1c9b5e;
+  }
+  &:active {
+    color: rgba($color-white, 0.3);
+  }
+  &:disabled {
+    background-color: #e5e5e5;
+  }
 }
 
 .form__required-info {

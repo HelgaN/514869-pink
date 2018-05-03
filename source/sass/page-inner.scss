@@ -29,7 +29,6 @@
 .page-inner__paragraph-wrapper--bg {
   background-color: $color-blue;
   background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-size: contain;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -56,7 +55,7 @@
 
 @media (min-width: $tablet-width) {
   .page-inner {
-    margin-top: -90px;
+    margin-top: -110px;
   }
   .page-inner__title {
     width: 620px;
@@ -79,7 +78,7 @@
     line-height: 30px;
   }
   .page-inner__paragraph-photos {
-    padding: 92px 0 55px 0;
+    padding: 92px 90px 55px 90px;
   }
 
   .page-inner__paragraph-contest {
