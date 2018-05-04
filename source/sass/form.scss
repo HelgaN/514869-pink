@@ -75,6 +75,24 @@
   &:focus {
     border-color: $color-pink;
   }
+  &:hover + svg {
+    background-color: $color-darkblue;
+  }
+  &:active + svg {
+    background-color: $color-pink;
+    path {
+      fill: rgba($color-white, 0.5);
+    }
+  }
+  &:focus + svg {
+    background-color: $color-pink;
+    path {
+      fill: rgba($color-white, 0.5);
+    }
+  }
+  &--icon {
+    display: none;
+  }
 }
 
 .form__fieldset--gray {
@@ -219,14 +237,13 @@
 }
 
 .form__wrapper--row {
-  padding: 0 20px;
-  margin: 0 auto;
+  margin: 0 20px;
 }
 
 .form__button {
   @include button-green;
-  width: 100%;
-  margin-bottom: 35px;
+  width: 280px;
+  margin-bottom: 20px;
   &:hover {
     background-color: #1c9b5e;
   }
@@ -239,6 +256,7 @@
 }
 
 .form__required-info {
+  margin-bottom: 0;
   font-size: $body-font-size;
   line-height: 30px;
   font-weight: 400;
@@ -262,12 +280,17 @@
   flex-direction: row;
   align-items: baseline;
   }
+  .form__wrapper--row {
+    margin: 0 auto;
+  }
   .form__label {
     padding: 0;
     margin-right: 17px;
   }
   .form__input {
+    box-sizing: border-box;
     margin-bottom: 50px;
+    height: 60px;
   }
 
   .form__fieldset:first-child {
@@ -332,30 +355,41 @@
   .form__fieldset--contacts {
     padding-top: 45px;
     .form__input {
-      width: 500px;
+      width: 436px;
       margin-bottom: 15px;
+    }
+    .form__input--icon {
+      display: block;
+      box-sizing: border-box;
+      width: 60px;
+      height: 60px;
+      background-color: #e5e5e5;
+      padding: 22px;
+      &-mail {
+        padding-top: 25px;
+        padding-bottom: 25px;
+      }
     }
     .form__label {
       margin-bottom: 32px;
+      order: 1;
+      margin-left: 15px;
     }
     .form__legend {
       @include form-legend;
+      display: block;
+      margin-top: 30px;
       top: -41px;
       left: 188px;
     }
   }
-  .form__fieldset--contacts .form__legend {
-    display: block;
-    margin-top: 30px;
-  }
+
   .form__wrapper--contacts {
+    position: relative;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     padding: 0 38px;
-    .form__label {
-      order: 1;
-      margin-left: 15px;
-    }
   }
 
   .form__fieldset--progress {
@@ -448,6 +482,7 @@
     }
   }
   .form__fieldset--contacts {
+    padding-top: 40px;
     .form__wrapper {
       width: 936px;
       display: flex;
@@ -458,8 +493,9 @@
   }
   .form__wrapper--contacts {
     width: 410px;
+    padding: 0 35px;
     .form__input {
-      width: 372px;
+      width: 309px;
     }
     .form__label {
       margin-bottom: 13px;
