@@ -16,7 +16,7 @@ var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
 var server = require("browser-sync").create();
 var run = require("run-sequence");
-
+/*
 gulp.task("style", function() {
   gulp.src("source/sass/style.scss")
     .pipe(plumber())
@@ -29,7 +29,7 @@ gulp.task("style", function() {
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("source/css"))
     .pipe(server.stream());
-});   /*
+});   */
 gulp.task("style", function() {
   gulp.src("source/sass/style.scss")
     .pipe(plumber())
@@ -42,7 +42,7 @@ gulp.task("style", function() {
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
-});*/
+});
 
 gulp.task("html", function() {
   return gulp.src("source/*.html")
