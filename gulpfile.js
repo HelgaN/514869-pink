@@ -30,6 +30,7 @@ gulp.task("style", function() {
     .pipe(gulp.dest("source/css"))
     .pipe(server.stream());
 });    */
+
 gulp.task("style", function() {
   gulp.src("source/sass/style.scss")
     .pipe(plumber())
