@@ -1,15 +1,14 @@
 .modal {
   position: absolute;
-  margin: auto;
+  margin: 0 auto;
   left: 0;
   right: 0;
   display: none;
   width: 320px;
   box-sizing: border-box;
   padding-top: 40px;
-  margin: 0 auto;
   background-color: $color-white;
-  box-shadow: 0 8px 15px 0 rgba(0,0,0,0.15);
+  box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.15);
   z-index: 100;
 }
 
@@ -39,8 +38,8 @@
 }
 
 .modal__button {
-  width: 280px;
   @include button-green;
+  width: 280px;
 }
 
 .modal__button--background {
@@ -55,9 +54,11 @@
 
 .modal-error {
   top: 1150px;
+
   .modal__paragraph {
     padding: 0 20px;
   }
+
   .modal__button--background {
     background-color: $color-white;
     padding-top: 8px;
@@ -66,9 +67,10 @@
 
 @media (min-width: $tablet-width) {
   .modal {
-  width: 460px;
-  padding-top: 65px;
+    width: 460px;
+    padding-top: 65px;
   }
+
   .modal__title {
     width: 230px;
     margin: 0 auto;
@@ -76,6 +78,7 @@
     font-size: 30px;
     line-height: 40px;
   }
+
   .modal__paragraph {
     white-space: normal;
     padding-left: 67px;
@@ -83,16 +86,20 @@
     font-size: 18px;
     line-height: 24px;
   }
+
   .modal__button {
     width: 300px;
   }
+
   .modal-error {
     top: 880px;
+
     .modal__paragraph {
       padding-left: 67px;
       padding-right: 67px;
     }
   }
+
   .modal-sent {
     top: 1355px;
   }
@@ -100,36 +107,45 @@
 
 @media (min-width: $desktop-width) {
   .modal {
-  width: 776px;
-  padding-top: 40px;
+    width: 776px;
+    padding-top: 40px;
   }
+
   .modal__title {
     width: 380px;
   }
+
   .modal__paragraph {
     width: 380px;
     margin: 0 auto;
     margin-bottom: 60px;
   }
+
   .modal-error .modal__button--background {
     padding: 50px 200px;
     background-color: $color-lightgrey;
   }
+
   .modal-error {
     top: 820px;
   }
+
   .modal-sent {
     top: 1275px;
+
     .modal__title {
       width: 430px;
     }
+
     .modal__paragraph {
       margin-bottom: 40px;
     }
+
     .modal__button--background {
       padding-left: 160px;
       padding-right: 160px;
     }
+
     .modal__button {
       width: 100%;
     }

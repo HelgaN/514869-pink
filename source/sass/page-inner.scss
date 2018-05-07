@@ -7,15 +7,12 @@
   width: 280px;
   box-sizing: border-box;
   margin: 0 auto;
+  padding: 98px 20px 82px;
   color: $color-white;
   font-size: 24px;
   line-height: 1.2;
   font-weight: 300;
   text-align: center;
-}
-
-.page-inner__title {
-  padding: 98px 20px 82px;
 }
 
 .page-inner__title-contest {
@@ -27,6 +24,8 @@
 }
 
 .page-inner__paragraph-wrapper--bg {
+  margin-top: -70px;
+  background-position: center -70px;
   background-color: $color-blue;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -57,6 +56,7 @@
   .page-inner {
     margin-top: -110px;
   }
+
   .page-inner__title {
     width: 620px;
     font-size: 50px;
@@ -77,6 +77,7 @@
     font-size: 18px;
     line-height: 30px;
   }
+
   .page-inner__paragraph-photos {
     padding: 92px 90px 55px 90px;
   }
@@ -115,6 +116,7 @@
   .page-inner__paragraph {
     width: 940px;
   }
+
   .page-inner__paragraph-photos {
     padding-left: 175px;
     padding-right: 175px;
@@ -123,6 +125,7 @@
 
   .page-inner__paragraph-contest {
     padding: 0 90px 0;
+    margin-top: -5px;
   }
 
   .page-inner__paragraph-contest--hidden {

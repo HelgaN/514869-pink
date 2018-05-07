@@ -29,7 +29,7 @@ gulp.task("style", function() {
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("source/css"))
     .pipe(server.stream());
-});   */
+});    */
 gulp.task("style", function() {
   gulp.src("source/sass/style.scss")
     .pipe(plumber())
@@ -94,9 +94,9 @@ gulp.task("sprite", function() {
 gulp.task("images", function() {
   return gulp.src("source/img/**/*.{png, jpg, svg}")
     .pipe(imagemin([
-       imagemin.optipng({optimizationLevel: 3}),
-       imagemin.jpegtran({progressive: true}),
-       imagemin.svgo()
+      imagemin.optipng({optimizationLevel: 3}),
+      imagemin.jpegtran({progressive: true}),
+      imagemin.svgo()
     ]))
   .pipe(gulp.dest("source/img/1"));
 });
