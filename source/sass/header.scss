@@ -1,16 +1,29 @@
 .page-header {
   position: relative;
-  background-color: rgba($color-blue, 0.7);
-  /* фон - картинка нижнего блока */
-  transition-duration: 0.6s;
+  background-color: rgba($color-darkblue, 0.8);
 }
 
 .page-header__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.main-navigation--opened .page-header__wrapper {
+  background-color: $color-blue;
+}
+
+.page-header__logo--wrapper {
   width: 320px;
   box-sizing: border-box;
-  display: flex;
-  justify-content: space-between;
   padding: 20px;
+  margin: 0 auto;
+}
+
+.main-navigation {
+  width: 100%;
+  position: relative;
   margin: 0 auto;
 }
 
@@ -32,8 +45,9 @@
 
 .page-header__logo-image--desktop:hover {
   path {
-  fill: $color-pink;
+    fill: $color-pink;
   }
+
   .page-header__logo-image--desktop-star {
     fill: $color-white;
   }
@@ -49,21 +63,18 @@
 
 .page-header__logo-image--desktop:active {
   path {
-  fill: rgba($color-pink, 0.3);
+    fill: rgba($color-pink, 0.3);
   }
+
   .page-header__logo-image--desktop-star {
     fill: rgba($color-white, 0.3);
   }
 }
 
-.main-navigation__list {
-  @include list-reset;
-}
-
 .main-navigation__toggle {
   position: absolute;
-  top: -47px;
-  right: 20px;
+  top: -50px;
+  left: 78%;
   z-index: 2;
   display: block;
   width: 50px;
@@ -81,22 +92,22 @@
   width: 50px;
   height: 25px;
   background-color: $color-darkblue;
-  background-image: linear-gradient(to bottom, #ffffff 0px, #ffffff 5px, $color-darkblue 5px, $color-darkblue 10px, #ffffff 10px, #ffffff 15px, $color-darkblue 15px, $color-darkblue 20px, #ffffff 20px, #ffffff 25px);
+  background-image: linear-gradient(to bottom, #ffffff 0, #ffffff 5px, $color-darkblue 5px, $color-darkblue 10px, #ffffff 10px, #ffffff 15px, $color-darkblue 15px, $color-darkblue 20px, #ffffff 20px, #ffffff 25px);
 }
 
 .main-navigation--closed .main-navigation__toggle:hover::before {
-  background-image: linear-gradient(to bottom, $color-pink 0px, $color-pink 5px, $color-darkblue 5px, $color-darkblue 10px, $color-pink 10px, $color-pink 15px, $color-darkblue 15px, $color-darkblue 20px, $color-pink 20px, $color-pink 25px);
+  background-image: linear-gradient(to bottom, $color-pink 0, $color-pink 5px, $color-darkblue 5px, $color-darkblue 10px, $color-pink 10px, $color-pink 15px, $color-darkblue 15px, $color-darkblue 20px, $color-pink 20px, $color-pink 25px);
 }
 
 .main-navigation--closed .main-navigation__toggle:active::before {
-  background-image: linear-gradient(to bottom, rgba($color-pink, 0.3) 0px, rgba($color-pink, 0.3) 5px, $color-darkblue 5px, $color-darkblue 10px, rgba($color-pink, 0.3) 10px, rgba($color-pink, 0.3) 15px, $color-darkblue 15px, $color-darkblue 20px, rgba($color-pink, 0.3) 20px, rgba($color-pink, 0.3) 25px);
+  background-image: linear-gradient(to bottom, rgba($color-pink, 0.3) 0, rgba($color-pink, 0.3) 5px, $color-darkblue 5px, $color-darkblue 10px, rgba($color-pink, 0.3) 10px, rgba($color-pink, 0.3) 15px, $color-darkblue 15px, $color-darkblue 20px, rgba($color-pink, 0.3) 20px, rgba($color-pink, 0.3) 25px);
 }
 
 .main-navigation--opened .main-navigation__toggle {
   width: 26px;
   height: 26px;
-  top: 20px;
-  left: auto;
+  top: -50px;
+  left: 86%;
   right: 20px;
 
   &::after,
@@ -131,6 +142,7 @@
     background-color: rgba($color-pink, 0.3);
   }
 }
+
 @keyframes open {
   0% {
     transform: translateY(100%) scale(0.6) scaleY(0.5);
@@ -148,37 +160,20 @@
     transform: translateY(0%) scale(1) scaleY(1);
   }
 }
-@media (max-width: $tablet-width-only) {
-  .main-navigation {
-    position: absolute;
-    top: 66px;
-    left: 0;
-    width: 100%;
-    margin: 0 auto;
-  }
 
+@media (max-width: $tablet-width-only) {
   .main-navigation--closed .main-navigation__item {
     display: none;
   }
 
   .main-navigation--opened {
-    margin-top: 260px;
-    margin-bottom: 260px;
     background-color: $color-blue;
-  }
-
-  .main-navigation--opened .page-header__wrapper {
-    margin-top: -260px;
   }
 
   .main-navigation--opened .main-navigation__item {
     display: block;
     background-color: $color-blue;
     animation: open 0.8s;
-  }
-
-  .main-navigation--opened .main-navigation__toggle {
-    top: -47px;
   }
 }
 
@@ -188,7 +183,9 @@
 }
 
 .main-navigation__item {
-  padding: 16px 0;
+  min-height: 66px;
+  box-sizing: border-box;
+  padding: 16px;
   text-align: center;
   border-top: 1px solid #485461;
   border-bottom: 1px solid #000101;
@@ -222,9 +219,9 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-header__wrapper {
-    min-width: $tablet-width;
-    padding: 26px 20px;
+  .page-header__logo--wrapper {
+    padding: 20px 20px 45px;
+    width: $tablet-width;
   }
 
   .page-header__logo-image--mobile {
@@ -250,15 +247,28 @@
   }
 
   .main-navigation__toggle {
-    top: -23px;
+    top: -70px;
+    left: 89.5%;
+  }
+
+  .main-navigation--opened .main-navigation__toggle {
+    top: -68px;
+    left: 93%;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header__wrapper {
-    min-width: $desktop-width;
-    padding: 20px 130px;
-    background-color: transparent;
+    position: relative;
+    width: $desktop-width;
+    box-sizing: border-box;
+    padding: 13px 130px 0;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .page-header__logo--wrapper {
+    padding: 15px 0;
   }
 
   .page-header__logo-image--tablet {
@@ -267,20 +277,27 @@
 
   .page-header__logo-image--desktop {
     display: block;
-    padding-top: 5px;
   }
 
   .main-navigation {
-    position: relative;
-    top: 0;
-    padding-top: 5px;
+    margin: 0;
   }
 
   .main-navigation .main-navigation__item {
     display: block;
+    padding: 30px;
     border-color: transparent;
     background-color: transparent;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
   }
+
   .main-navigation .main-navigation__list {
     display: flex;
     justify-content: space-between;
@@ -288,15 +305,26 @@
     margin-left: auto;
     background-color: transparent;
   }
+
   .main-navigation__link {
+    display: block;
+    min-height: 29px;
     font-size: 18px;
     line-height: 1.2;
     font-weight: 400;
     text-transform: none;
+    border-bottom: 2px solid transparent;
+
+    &--curent {
+      border-bottom: 2px solid $color-white;
+    }
   }
 
   .main-navigation__toggle {
     display: none;
   }
 
+  .main-navigation--opened .page-header__wrapper {
+    background-color: none;
+  }
 }

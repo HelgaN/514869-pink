@@ -17,18 +17,26 @@
   width: 27px;
   height: 34px;
   transform: scale(1.7);
+
   svg {
     margin-bottom: -10px;
+
     path {
       fill: $color-pink;
     }
   }
+
   svg:hover path {
-      fill: $color-darkblue;
-    }
+    fill: $color-darkblue;
+  }
+
   svg:active path {
     fill: #bec2c7;
   }
+}
+
+@media (min-width: $tablet-width) {
+  padding-bottom: 25px;
 }
 
 @media (min-width: $desktop-width) {

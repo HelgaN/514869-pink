@@ -1,12 +1,13 @@
 .social__list {
+  @include list-reset;
   display: flex;
   justify-content: center;
-  @include list-reset;
   margin-bottom: 33px;
 }
 
 .social__item {
   margin-right: 10px;
+
   &:last-child {
     margin-right: 0;
   }
@@ -19,24 +20,29 @@
   height: 50px;
   border: 3px solid #e9ebec;
   border-radius: 50%;
+
   &--twitter {
     background-image: url("../img/icon-twitter.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
+
   &--facebook {
     background-image: url("../img/icon-facebook.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
+
   &--youtube {
     background-image: url("../img/icon-youtube.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
+
   &:hover {
     border-color: $color-blue;
   }
+
   &:active {
     opacity: 0.3;
     border-color: rgba($color-blue, 0.4);
@@ -55,6 +61,7 @@
     padding-right: 0;
     padding-left: 10px;
   }
+
   .social__item {
     margin-right: 15px;
   }

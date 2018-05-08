@@ -4,9 +4,10 @@
 
 .page-inner__title {
   display: block;
+  width: 280px;
   box-sizing: border-box;
-  padding: 98px 20px 82px;
   margin: 0 auto;
+  padding: 98px 20px 82px;
   color: $color-white;
   font-size: 24px;
   line-height: 1.2;
@@ -23,9 +24,10 @@
 }
 
 .page-inner__paragraph-wrapper--bg {
+  margin-top: -70px;
+  background-position: center -70px;
   background-color: $color-blue;
   background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-size: contain;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -33,13 +35,15 @@
 .page-inner__paragraph {
   width: 320px;
   box-sizing: border-box;
-  padding: 45px 20px 48px 20px;
   margin: 0 auto;
+  padding: 45px 38px 48px 38px;
   text-align: center;
   line-height: $body-line-height + 6px;
 }
 
 .page-inner__paragraph-contest {
+  padding-left: 20px;
+  padding-right: 20px;
   padding-bottom: 25px;
   margin-bottom: 15px;
 }
@@ -50,34 +54,45 @@
 
 @media (min-width: $tablet-width) {
   .page-inner {
-    margin-top: -90px;
+    margin-top: -110px;
   }
+
   .page-inner__title {
-    padding-top: 180px;
-    padding-left: 150px;
-    padding-right: 150px;
-    padding-bottom: 138px;
+    width: 620px;
     font-size: 50px;
     line-height: 1.2;
   }
 
+  .page-inner__title-photos {
+    padding: 180px 130px 138px;
+  }
+
+  .page-inner__title-contest {
+    padding: 180px 65px 77px;
+  }
+
   .page-inner__paragraph {
-    width: 500px;
-    padding: 92px 0 55px 0;
-    margin-bottom: 17px;
+    width: 620px;
+    margin-bottom: 20px;
     font-size: 18px;
     line-height: 30px;
   }
 
-  .page-inner__paragraph-wrapper--bg {
-    background-position: center -90px;
+  .page-inner__paragraph-photos {
+    padding: 92px 90px 55px 90px;
   }
 
-  .page-inner__title-contest {
-    padding-top: 180px;
-    padding-left: 90px;
-    padding-right: 90px;
-    padding-bottom: 77px;
+  .page-inner__paragraph-contest {
+    padding: 92px 65px 50px;
+  }
+
+  .page-inner__paragraph-contest--hidden {
+    display: block;
+  }
+
+  .page-inner__paragraph-wrapper--bg {
+    margin-top: -110px;
+    background-position: center -90px;
   }
 }
 
@@ -85,9 +100,38 @@
   .page-inner {
     margin-top: -130px;
   }
+
   .page-inner__title {
-    padding: 200px 100px 100px;
+    width: 940px;
   }
+
+  .page-inner__title-photos {
+    padding: 200px 280px 100px;
+  }
+
+  .page-inner__title-contest {
+    padding: 200px 80px 100px;
+  }
+
+  .page-inner__paragraph {
+    width: 940px;
+  }
+
+  .page-inner__paragraph-photos {
+    padding-left: 175px;
+    padding-right: 175px;
+    margin-bottom: 30px;
+  }
+
+  .page-inner__paragraph-contest {
+    padding: 0 90px 0;
+    margin-top: -5px;
+  }
+
+  .page-inner__paragraph-contest--hidden {
+    display: inline;
+  }
+
   .page-inner__paragraph-wrapper {
     width: $desktop-width;
     padding: 95px 0 60px;
@@ -95,10 +139,5 @@
 
   .page-inner__paragraph-wrapper--bg {
     background-position: center -590px;
-  }
-
-  .page-inner__paragraph {
-    width: 800px;
-    padding: 0;
   }
 }
