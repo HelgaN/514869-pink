@@ -14,7 +14,7 @@
     width: 140px;
     height: 36px;
     top: 0;
-    left: 160px;
+    left: 50%;
     text-align: center;
     color: $color-white;
     font-size: 12px;
@@ -146,7 +146,7 @@
 
   .photogallery__panorama::before {
     top: 55px;
-    left: 500px;
+    left: 76%;
   }
 
   .photogallery__panorama-wrapper {
@@ -241,7 +241,7 @@
     }
 
     &::before {
-      left: 930px;
+      left: 77.5%;
     }
   }
 

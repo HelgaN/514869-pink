@@ -6,10 +6,10 @@
 .tariffs::before {
   position: absolute;
   content: "";
-  top: -20px;
   width: 100%;
-  height: 25px;
-  background-image: linear-gradient(to left top, $color-lightgrey 50%, $color-white 50%, $color-white 100%);
+  top: -20px;
+  height: 27px;
+  background-image: linear-gradient(to left top, $color-lightgrey 55%, $color-white 55%, $color-white 100%);
 }
 
 .tariffs__wrapper {
@@ -194,7 +194,7 @@
 
   .tariffs__wrapper {
     width: $tablet-width;
-    padding: 30px 20px 65px 20px;
+    padding: 30px 20px 70px 20px;
   }
 
   .tariff__toggles--wrapper {
@@ -209,7 +209,7 @@
     display: block;
     width: 153px;
     box-sizing: border-box;
-    padding: 7px 15px;
+    padding: 6.5px 15px;
     font-size: 14px;
     line-height: $body-line-height + 6px;
     background-color: $color-white;
@@ -227,11 +227,11 @@
   .tariff__title {
     width: 155px;
     box-sizing: border-box;
-    padding: 0 15px;
+    padding: 6px 15px;
   }
 
   .tariff__title {
-    padding: 10px;
+    padding: 9px 10px;
 
     &--hit {
       background-image: url("../img/bg-hit-tablet.svg");
@@ -274,16 +274,17 @@
 
   .tariffs::before {
     height: 86px;
+    background-image: linear-gradient(to left top, $color-lightgrey 50%, $color-white 50%, $color-white 100%);
   }
 
   .tariffs__wrapper {
     width: $desktop-width;
-    padding: 100px 130px 95px 130px;
+    padding: 95px 130px 95px 130px;
   }
 
   .tariff__hidden {
     width: 235px;
-    padding: 14px 15px;
+    padding: 14px 20px;
     font-size: 18px;
     line-height: $body-line-height + 6px;
   }
@@ -296,7 +297,7 @@
   }
 
   .tariff__title {
-    padding: 20px;
+    padding: 19px;
   }
 
   .tariff__name {
@@ -326,6 +327,11 @@
   }
 
   .tariff__title--hit {
+    background-image: url("../img/bg-hit.svg");
     background-position: left top;
+    &:before {
+      top: 15px;
+      left: 10px;
+    }
   }
 }

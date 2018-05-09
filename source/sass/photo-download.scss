@@ -268,7 +268,7 @@
   .photo-download__button--cancel {
     width: 260px;
     padding: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 }
 
@@ -291,7 +291,7 @@
 
   .photo-download__user-section .photo-download__wrapper {
     width: 940px;
-    padding: 55px 60px 45px 80px;
+    padding: 55px 60px 35px 80px;
     background-color: $color-lightgrey;
   }
 
@@ -309,6 +309,7 @@
   }
 
   .photo-download__range-controls {
+    margin-top: -5px;
     padding: 0;
   }
 
@@ -330,16 +331,18 @@
 
   .photo-download__scale {
     width: 290px;
+    margin-bottom: 53px;
   }
 
   .photo-download__editing-list {
     padding: 0;
+    margin-top: -5px;
   }
 
   .photo-download__editing-item {
     width: 48px;
     height: 48px;
-    margin-bottom: 20px;
+    margin-bottom: 23px;
   }
 
   .photo-download__button {

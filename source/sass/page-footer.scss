@@ -1,9 +1,9 @@
 .page-footer {
   margin-bottom: 0;
+}
 
-  iframe {
-    width: 100%;
-  }
+.page-footer__map {
+  width: 100%;
 }
 
 .page-footer__wrapper {
@@ -98,7 +98,7 @@
 @media (min-width: $tablet-width) {
   iframe {
     height: 375px;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
   }
 
   .page-footer__wrapper {

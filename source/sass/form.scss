@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  margin: 0 auto 10px;
+  margin: 0 auto 15px;
 }
 
 .form__wrapper {
@@ -30,7 +30,7 @@
 }
 
 .form__legend {
-  padding: 40px 30px;
+  padding: 38px 30px 42px;
   text-align: center;
 }
 
@@ -51,8 +51,9 @@
 .form__input {
   width: 100%;
   box-sizing: border-box;
-  padding: 15px;
+  padding: 15px 20px;
   margin-bottom: 20px;
+  font-family: inherit;
   font-size: 18px;
   line-height: 30px;
   border: 2px solid #e5e5e5;
@@ -228,6 +229,7 @@
   box-sizing: border-box;
   padding: 15px 20px;
   margin-bottom: 20px;
+  font-family: inherit;
   font-size: 18px;
   line-height: 30px;
   border: 2px solid #e5e5e5;
@@ -304,6 +306,7 @@
   .form {
     width: $tablet-width;
     padding: 0 20px;
+    margin-bottom: 8px;
   }
 
   .form__wrapper {
@@ -378,16 +381,21 @@
 
     .form__input {
       width: 436px;
+      height: 63px;
       margin-bottom: 15px;
     }
 
     .form__input--icon {
       display: block;
+      position: absolute;
       box-sizing: border-box;
-      width: 60px;
-      height: 60px;
+      width: 63px;
+      height: 63px;
+      right: 40px;
+      padding: 21px;
+
+
       background-color: #e5e5e5;
-      padding: 22px;
 
       &-mail {
         padding-top: 25px;
@@ -445,7 +453,7 @@
 
   .form__fieldset--textarea {
     padding: 45px 0;
-    margin-bottom: 68px;
+    margin-bottom: 65px;
     order: 4;
     text-align: center;
 
@@ -456,9 +464,13 @@
     }
   }
 
+  .form__required-info {
+    padding-top: 5px;
+  }
+
   .form__textarea {
     width: 500px;
-    min-height: 190px;
+    min-height: 195px;
     margin-bottom: 0;
   }
 
@@ -541,6 +553,10 @@
     }
   }
 
+  .form__fieldset--name .form__input {
+    margin-bottom: 52px;
+  }
+
   .form__fieldset--name,
   .form__fieldset--apps {
     width: 430px;
@@ -585,10 +601,17 @@
     padding: 0 35px;
 
     .form__input {
-      width: 309px;
+      width: 315px;
+      height: 63px;
+    }
+
+    .form__input--icon {
+      right: 35px;
+
     }
 
     .form__label {
+      margin-left: 20px;
       margin-bottom: 20px;
     }
   }

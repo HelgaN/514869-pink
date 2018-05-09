@@ -1,15 +1,15 @@
 .advantages {
   position: relative;
   padding: 42px 0 0 0;
-  background-image: linear-gradient(to bottom, $color-white 249px, $color-lightgrey 249px, $color-lightgrey 100%);
+  background-image: linear-gradient(to bottom, $color-white 248px, $color-lightgrey 248px, $color-lightgrey 100%);
 }
 
 .advantages::before {
   position: absolute;
   content: "";
-  top: 225px;
+  top: 220px;
   width: 100%;
-  height: 25px;
+  height: 30px;
   background-image: linear-gradient(to left top, $color-lightgrey 50%, $color-white 50%, $color-white 100%);
 }
 
@@ -34,7 +34,7 @@
 }
 
 .advantages__tagline-two {
-  margin-bottom: 65px;
+  margin-bottom: 62px;
 }
 
 .advantages__list {
@@ -67,6 +67,9 @@
 
 .advantages__description {
   margin: 0;
+  br {
+    display: none;
+  }
 }
 
 .advantages__effect {
@@ -129,7 +132,7 @@
     display: flex;
     flex-direction: column;
     padding-top: 60px;
-    padding-bottom: 0;
+    padding-bottom: 20px;
     background-image: url("../img/iphone-screen-3-tablet@1x.png");
     background-position: 0 0;
     background-size: 270px auto;
@@ -142,18 +145,21 @@
   .advantages__item {
     width: 320px;
     margin-left: auto;
-    padding-bottom: 24px;
+    padding-bottom: 22px;
     text-align: left;
   }
 
   .advantages__title {
-    padding: 10px;
+    padding: 12px 10px;
     margin-bottom: 0;
     text-align: left;
   }
 
   .advantages__description {
-    padding: 0 10px;
+    padding: 0 0 0 10px;
+    br {
+      display: block;
+    }
   }
 
   .advantages__effect {
@@ -214,12 +220,20 @@
 
   .advantages__list {
     flex-direction: row;
-    padding-top: 245px;
+    padding-top: 246px;
     background-image: none;
   }
 
   .advantages__item {
     position: relative;
+
+    &:first-child {
+      margin-right: 9px;
+    }
+
+    &:last-child {
+      margin-left: 9px;
+    }
 
     &::before {
       position: absolute;
@@ -273,25 +287,27 @@
   .advantages__description {
     width: 240px;
     margin: 0 auto;
+    padding: 0;
     text-align: center;
     font-size: 18px;
     line-height: 30px;
+    br {
+      display: none;
+    }
   }
 
   .advantages__effect {
     width: $desktop-width;
     margin: 0 auto;
-    padding-left: 140px;
-    padding-right: 140px;
-    padding-bottom: 115px;
+    padding: 75px 140px 113px;
     background-color: $color-lightgrey;
-    background-position: 130px 20px;
+    background-position: 130px 0;
     background-size: 298px 345px;
   }
 
   .advantages__effect-title {
     width: 565px;
-    padding: 17px 0;
+    padding: 17px 0 16px;
 
     br {
       display: none;
@@ -301,6 +317,7 @@
   .advantages__effect-info {
     width: 570px;
     margin-bottom: 20px;
+    padding: 8px 5px;
     font-size: 18px;
     line-height: 30px;
 
@@ -311,6 +328,7 @@
 
   .advantages__effect-link {
     width: 570px;
+    padding-left: 8px;
     font-size: 18px;
     line-height: 30px;
   }
