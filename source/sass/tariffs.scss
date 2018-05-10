@@ -329,7 +329,8 @@
   .tariff__title--hit {
     background-image: url("../img/bg-hit.svg");
     background-position: left top;
-    &:before {
+
+    &::before {
       top: 15px;
       left: 10px;
     }

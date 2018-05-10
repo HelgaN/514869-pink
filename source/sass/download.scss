@@ -69,6 +69,14 @@
   margin-bottom: 15px;
 }
 
+.download__item:hover {
+  transform: scale(1.3);
+}
+
+.download__item:active {
+  opacity: 0.3;
+}
+
 .download__info {
   margin: 0;
   color: $color-white;

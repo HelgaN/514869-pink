@@ -64,10 +64,12 @@
 
   &::-moz-placeholder {
     color: $color-blue;
+    opacity: 1;
   }
 
   &:-moz-placeholder {
     color: $color-blue;
+    opacity: 1;
   }
 
   &:-ms-input-placeholder {
@@ -234,23 +236,28 @@
   line-height: 30px;
   border: 2px solid #e5e5e5;
 
-  &textarea:-moz-placeholder {
+  &:-moz-placeholder {
     color: $color-blue;
   }
 
-  &textarea::-moz-placeholder {
+  &::-moz-placeholder {
     color: $color-blue;
   }
 
-  &textarea::-webkit-input-placeholder {
+  &::-moz-placeholder,
+  :-moz-placeholder {
+    opacity: 1;
+  }
+
+  &::-webkit-input-placeholder {
     color: $color-blue;
   }
 
-  &textarea:-ms-placeholder {
+  &:-ms-placeholder {
     color: $color-blue;
   }
 
-  &textarea::placeholder {
+  &::placeholder {
     color: $color-blue;
   }
 
@@ -464,10 +471,6 @@
     }
   }
 
-  .form__required-info {
-    padding-top: 5px;
-  }
-
   .form__textarea {
     width: 500px;
     min-height: 195px;
@@ -491,6 +494,7 @@
 
   .form__required-info {
     width: 300px;
+    padding-top: 5px;
     box-sizing: border-box;
     text-align: right;
   }
@@ -553,10 +557,6 @@
     }
   }
 
-  .form__fieldset--name .form__input {
-    margin-bottom: 52px;
-  }
-
   .form__fieldset--name,
   .form__fieldset--apps {
     width: 430px;
@@ -568,6 +568,7 @@
 
     .form__input {
       height: 65px;
+      margin-bottom: 52px;
     }
   }
 
@@ -607,7 +608,6 @@
 
     .form__input--icon {
       right: 35px;
-
     }
 
     .form__label {
