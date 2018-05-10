@@ -8,11 +8,11 @@ var buttonError = document.querySelector(".modal__button--error");
 
 form.addEventListener("submit", function(evt) {
   if(evt) {
-  evt.preventDefault();
-  modalSent.classList.add("modal__open");
-} else {
-  modalError.classList.add("modal__open");
-}
+    evt.preventDefault();
+    modalSent.classList.add("modal__open");
+  } else {
+    modalError.classList.add("modal__open");
+  }
 });
 
 buttonSent.addEventListener("click", function() {

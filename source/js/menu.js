@@ -7,7 +7,6 @@ var buttonToggle = document.querySelector(".main-navigation__toggle");
 mainNavOpenBlock.classList.remove("page-header--expand");
 mainNavCloseBlock.classList.add("main-navigation--closed");
 
-
 buttonToggle.addEventListener("click", function(evt) {
   if(mainNavCloseBlock.classList.contains("main-navigation--closed")) {
     mainNavCloseBlock.classList.remove("main-navigation--closed");
