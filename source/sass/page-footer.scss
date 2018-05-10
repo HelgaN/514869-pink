@@ -96,7 +96,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  iframe {
+  .page-footer__map {
     height: 375px;
     margin-bottom: 28px;
   }
@@ -144,7 +144,7 @@
     width: $desktop-width;
   }
 
-  iframe {
+  .page-footer__map {
     height: 500px;
     margin-bottom: 40px;
   }

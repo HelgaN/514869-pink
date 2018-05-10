@@ -307,6 +307,9 @@
   &--pink {
     color: $color-pink;
   }
+  &--hidden {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -332,7 +335,7 @@
   }
 
   .form__input {
-    margin-bottom: 50px;
+    margin-bottom: 52px;
   }
 
   .form__fieldset {
@@ -473,7 +476,7 @@
 
   .form__textarea {
     width: 500px;
-    min-height: 195px;
+    min-height: 193px;
     margin-bottom: 0;
   }
 
@@ -489,7 +492,7 @@
   .form__button {
     width: 300px;
     box-sizing: border-box;
-    margin-bottom: 45px;
+    margin-bottom: 44px;
   }
 
   .form__required-info {
@@ -657,5 +660,13 @@
     .form__button {
       margin-bottom: 0;
     }
+  }
+
+  .form__required-info {
+    width: 320px;
+  }
+
+  .form__required-info--hidden {
+    display: inline-block;
   }
 }

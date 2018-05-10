@@ -1,6 +1,6 @@
 .page-header {
   position: relative;
-  background-color: rgba($color-darkblue, 0.8);
+  background-color: rgba($color-black, 0.3);
 }
 
 .page-header__wrapper {
@@ -165,6 +165,6 @@
   }
 
   .page-header--expand .page-header__wrapper {
-    background-color: none;
+    background-color: transparent;
   }
 }
