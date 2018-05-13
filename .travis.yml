@@ -5,9 +5,3 @@ node_js:
 
 notifications:
   email: false
-
-deploy:
-  provider: heroku
-  app: helga-pink
-  api_key:
-    secure: 290f40b6-c6ee-4588-8519-d5bddbc8eae7
