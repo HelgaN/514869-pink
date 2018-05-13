@@ -58,3 +58,5 @@ git clone SSH-адрес_вашего_форка
 [travis-url]: https://travis-ci.org/htmlacademy-adaptive/514869-pink
 [dependency-image]: https://david-dm.org/htmlacademy-adaptive/514869-pink/dev-status.svg?style=flat-square
 [dependency-url]: https://david-dm.org/htmlacademy-adaptive/514869-pink?type=dev
+
+[![Build Status](https://travis-ci.org/HelgaN/514869-pink.svg?branch=master)](https://travis-ci.org/HelgaN/514869-pink)
