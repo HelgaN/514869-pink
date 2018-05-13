@@ -16,20 +16,6 @@ var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
 var server = require("browser-sync").create();
 var run = require("run-sequence");
-
-gulp.task("style", function() {
-  gulp.src("source/sass/style.scss")
-    .pipe(plumber())
-    .pipe(sass())
-    .pipe(postcss([
-      autoprefixer()
-    ]))
-    .pipe(gulp.dest("source/css"))
-    .pipe(minify())
-    .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("source/css"))
-    .pipe(server.stream());
-});
 /*
 gulp.task("style", function() {
   gulp.src("source/sass/style.scss")
@@ -38,13 +24,27 @@ gulp.task("style", function() {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(gulp.dest("source/css"))
+    .pipe(minify())
+    .pipe(rename("style.min.css"))
+    .pipe(gulp.dest("source/css"))
+    .pipe(server.stream());
+});*/
+
+gulp.task("style", function() {
+  gulp.src("source/sass/style.scss")
+    .pipe(plumber())
+    .pipe(sass())
+    .pipe(postcss([
+      autoprefixer()
+    ]))
     .pipe(gulp.dest("build/css"))
     .pipe(minify())
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
 });
-*/
+
 gulp.task("html", function() {
   return gulp.src("source/*.html")
   .pipe(posthtml([
@@ -56,7 +56,7 @@ gulp.task("html", function() {
 gulp.task("serve", ["style"], function() {
   server.init({
     server: "source/",
-    browser: 'chrome',
+  /*  browser: 'chrome',*/
     notify: false,
     open: true,
     cors: true,
@@ -79,7 +79,7 @@ gulp.task("copy", function() {
 });
 
 gulp.task("clean", function(){
-     return del("build");
+  return del("build");
 });
 
 gulp.task("sprite", function() {
